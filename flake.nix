@@ -7,6 +7,7 @@
       nixpkgs,
       chaotic,
       rust-overlay,
+      nix-doom-emacs-unstraightened,
       mango,
       nix-topology,
       home-manager,
@@ -85,6 +86,10 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    nix-doom-emacs-unstraightened = {
+      url = "github:marienz/nix-doom-emacs-unstraightened";
+      inputs.nixpkgs.follows = "";
+    };
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
