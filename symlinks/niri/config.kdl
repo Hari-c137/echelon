@@ -49,7 +49,6 @@ overview {
     zoom 0.45
 }
 
-spawn-at-startup "swww-daemon"
 spawn-at-startup "noctalia-shell"
 spawn-at-startup "vicinae" "server"
 
@@ -107,16 +106,7 @@ debug {
       honor-xdg-activation-with-invalid-serial
 }
 
-
-// workspace 1 web
-
-// workspace "code"
-// workspace "tool"
-// workspace "media"
-// workspace "game"
-
 binds {
-    Mod+E           { spawn "emacs" "--fullscreen"; }
     Mod+D           { spawn "vicinae" "toggle";  }
     Mod+F           { spawn "zen"; }
 
@@ -134,8 +124,6 @@ binds {
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
- //   Mod+J     { focus-window-down; } // emulating vim motion for niri workflow
- //   Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
@@ -151,15 +139,6 @@ binds {
     Mod+End  { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
-
- //   Mod+Shift+Left  { focus-monitor-left; }
- //   Mod+Shift+Down  { focus-monitor-down; }
- //   Mod+Shift+Up    { focus-monitor-up; }
- //   Mod+Shift+Right { focus-monitor-right; }
- //   Mod+Shift+H     { focus-monitor-left; }
- //   Mod+Shift+J     { focus-monitor-down; }
- //   Mod+Shift+K     { focus-monitor-up; }
- //   Mod+Shift+L     { focus-monitor-right; }
 
     Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
     Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
@@ -230,9 +209,7 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-  //  Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
-    // Mod+Shift+F { spawn "nemo"; }
     Mod+C { center-column; }
     Mod+Minus { set-column-width "-10%"; }
     Mod+Equal { set-column-width "+10%"; }

@@ -2,7 +2,7 @@
 
 {
   programs.helix = {
-    enable = false;
+    enable = true;
     defaultEditor = false;
     settings = {
       theme = "ayu_dark";

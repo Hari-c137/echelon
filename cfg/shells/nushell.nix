@@ -8,7 +8,6 @@
       gd = "git diff";
       gp = "git push -u origin main";
       x = "exit";
-      ed = "emacsclient -nw";
       mc = "make clean";
       mr = "make release";
       md = "make debug";
@@ -18,7 +17,7 @@
       l = "ls -l";
     };
     settings = {
-      buffer_editor = "emacsclient -nc";
+      buffer_editor = "hx";
       show_banner = false;
     };
   };

@@ -4,10 +4,10 @@
 
 | Components | Software |
 |:----------|:-----------:|
-| wayland_compositor | niri  | 
+| wayland_compositor | mangowc  | 
 | terminal_emulator  | kitty |
-| development_env | doomemacs |
-| desktop_shell      | ewwii (W.I.P) | 
+| text_editor | helix |
+| desktop_shell      | noctalia | 
 
  
 ## License (got it from [cve-rs](https://github.com/Speykious/cve-rs))

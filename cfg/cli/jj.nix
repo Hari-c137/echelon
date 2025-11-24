@@ -11,7 +11,7 @@
 
     settings = {
       ui = {
-        editor = "emacsclient -nw";
+        editor = "hx";
       };
       user = {
         name = "ClearlyOpaque";

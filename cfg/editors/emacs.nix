@@ -2,7 +2,7 @@
 
 {
   programs.emacs = {
-    enable = true;
+    enable = false;
     package = pkgs.emacs-pgtk;
     extraPackages = epkgs: [
       epkgs.vterm
@@ -12,6 +12,6 @@
   home.packages = with pkgs; [
     pandoc
   ];
-  services.emacs.enable = true;
-  services.emacs.defaultEditor = true;
+  services.emacs.enable = false;
+  services.emacs.defaultEditor = false;
 }
