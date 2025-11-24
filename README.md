@@ -4,7 +4,7 @@
 
 | Components | Software |
 |:----------|:-----------:|
-| wayland_compositor | mangowc  | 
+| wayland_compositor | niri  | 
 | terminal_emulator  | kitty |
 | text_editor | helix |
 | desktop_shell      | noctalia | 

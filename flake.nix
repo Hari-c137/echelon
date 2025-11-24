@@ -8,17 +8,12 @@
       chaotic,
       rust-overlay,
       mango,
-      nix-topology,
       home-manager,
       zen-browser,
       ...
     }@inputs:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        overlays = [ nix-topology.overlays.default ];
-      };
     in
     {
       nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
@@ -31,13 +26,11 @@
               nixpkgs.overlays = [
                 rust-overlay.overlays.default
                 inputs.niri.overlays.niri
-                nix-topology.overlays.default
               ];
             }
           )
           ./hosts/skynet/configuration.nix
           chaotic.nixosModules.default
-          nix-topology.nixosModules.default
           mango.nixosModules.mango
           (
             { pkgs, ... }:
@@ -72,13 +65,6 @@
           }
         ];
       };
-      topology.x86_64-linux = import nix-topology {
-        inherit pkgs;
-        modules = [
-          ./mods/topology.nix
-          { nixosConfigurations = self.nixosConfigurations; }
-        ];
-      };
 
     };
 
@@ -107,10 +93,6 @@
     };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nix-topology = {
-      url = "github:oddlama/nix-topology";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
