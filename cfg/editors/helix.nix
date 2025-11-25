@@ -48,11 +48,11 @@
         ];
       }
     ];
+    extraPackages = with pkgs; [
+      nil
+      inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
+      markdown-oxide
+    ];
   };
 
-  home.packages = with pkgs; [
-    inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
-    markdown-oxide
-    nil
-  ];
 }
