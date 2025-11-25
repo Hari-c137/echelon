@@ -10,7 +10,7 @@
 
   programs.niri = {
     enable = true;
-    package = pkgs.niri_git;
+    package = pkgs.niri;
   };
 
 }

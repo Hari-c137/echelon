@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  chaotic,
   inputs,
   ...
 }:
@@ -20,7 +21,7 @@
   services.lact = {
     enable = true;
   };
-
+  chaotic.mesa-git.enable = true;
   services.ananicy = {
     enable = true;
     package = pkgs.ananicy-cpp;
