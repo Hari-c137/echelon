@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   programs.helix = {
@@ -26,12 +26,33 @@
       };
     };
 
+    languages.language-server.wakatime = {
+      command = "wakatime-ls";
+    };
+
     languages.language = [
       {
         name = "nix";
         auto-format = true;
         formatter.command = "${pkgs.nixfmt}/bin/nixfmt";
+        language-servers = [
+          "nil"
+          "wakatime"
+        ];
+      }
+      {
+        name = "rust";
+        language-servers = [
+          "rust-analyzer"
+          "wakatime"
+        ];
       }
     ];
   };
+
+  home.packages = with pkgs; [
+    inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
+    markdown-oxide
+    nil
+  ];
 }
