@@ -1,6 +1,6 @@
-{ config, ... }: # todo: refactor this with loop
+{config, ...}:
+# todo: refactor this with loop
 {
-
   xdg.configFile."niri" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/x137/code/echelon/symlinks/niri/";
     recursive = true;

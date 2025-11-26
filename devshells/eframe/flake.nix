@@ -7,52 +7,48 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs =
-    {
-      self,
-      nixpkgs,
-      rust-overlay,
-      flake-utils,
-      ...
-    }:
+  outputs = {
+    self,
+    nixpkgs,
+    rust-overlay,
+    flake-utils,
+    ...
+  }:
     flake-utils.lib.eachDefaultSystem (
-      system:
-      let
-        overlays = [ (import rust-overlay) ];
-        pkgs = import nixpkgs { inherit system overlays; };
+      system: let
+        overlays = [(import rust-overlay)];
+        pkgs = import nixpkgs {inherit system overlays;};
       in
-      with pkgs;
-      {
-        devShells.default = mkShell rec {
-          buildInputs = [
-            # Rust
-            (rust-bin.stable.latest.default.override {
-              targets = [ "wasm32-unknown-unknown" ];
-            })
-            trunk
+        with pkgs; {
+          devShells.default = mkShell rec {
+            buildInputs = [
+              # Rust
+              (rust-bin.stable.latest.default.override {
+                targets = ["wasm32-unknown-unknown"];
+              })
+              trunk
 
-            # misc. libraries
-            openssl
-            pkg-config
+              # misc. libraries
+              openssl
+              pkg-config
 
-            # GUI libs
-            libxkbcommon
-            libGL
-            fontconfig
+              # GUI libs
+              libxkbcommon
+              libGL
+              fontconfig
 
-            # wayland libraries
-            wayland
+              # wayland libraries
+              wayland
 
-            # x11 libraries
-            xorg.libXcursor
-            xorg.libXrandr
-            xorg.libXi
-            xorg.libX11
+              # x11 libraries
+              xorg.libXcursor
+              xorg.libXrandr
+              xorg.libXi
+              xorg.libX11
+            ];
 
-          ];
-
-          LD_LIBRARY_PATH = "${lib.makeLibraryPath buildInputs}";
-        };
-      }
+            LD_LIBRARY_PATH = "${lib.makeLibraryPath buildInputs}";
+          };
+        }
     );
 }

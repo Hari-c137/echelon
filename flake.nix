@@ -1,73 +1,70 @@
 {
   description = "Echelon";
 
-  outputs =
-    {
-      self,
-      nixpkgs,
-      chaotic,
-      nixos-generators,
-      rust-overlay,
-      mango,
-      home-manager,
-      zen-browser,
-      ...
-    }@inputs:
-    let
-      system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs; };
-        modules = [
-          (
-            { pkgs, lib, ... }:
-            {
-              nixpkgs.overlays = [
-                rust-overlay.overlays.default
-                inputs.niri.overlays.niri
-              ];
-            }
-          )
-          ./hosts/skynet/configuration.nix
-          chaotic.nixosModules.default
-          mango.nixosModules.mango
-          (
-            { pkgs, ... }:
-            {
-              environment.systemPackages = with pkgs; [
-                (rust-bin.stable.latest.default.override {
-                  targets = [ "wasm32-unknown-unknown" ];
-                })
-              ];
-            }
-          )
-          (
-            { pkgs, ... }:
-            {
-              environment.systemPackages = with pkgs; [
-                nim
-                nimble
-              ];
-            }
-          )
-          home-manager.nixosModules.home-manager
+  outputs = {
+    self,
+    nixpkgs,
+    chaotic,
+    nixos-generators,
+    rust-overlay,
+    mango,
+    home-manager,
+    zen-browser,
+    ...
+  } @ inputs: let
+    system = "x86_64-linux";
+  in {
+    nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = {inherit inputs;};
+      modules = [
+        (
           {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              backupFileExtension = "backup";
-              users.x137 = import ./cfg/home.nix;
-              extraSpecialArgs = {
-                inherit inputs system;
-              };
-            };
+            pkgs,
+            lib,
+            ...
+          }: {
+            nixpkgs.overlays = [
+              rust-overlay.overlays.default
+              inputs.niri.overlays.niri
+            ];
           }
-        ];
-      };
-
+        )
+        ./hosts/skynet/configuration.nix
+        chaotic.nixosModules.default
+        mango.nixosModules.mango
+        (
+          {pkgs, ...}: {
+            environment.systemPackages = with pkgs; [
+              (rust-bin.stable.latest.default.override {
+                targets = ["wasm32-unknown-unknown"];
+              })
+            ];
+          }
+        )
+        (
+          {pkgs, ...}: {
+            environment.systemPackages = with pkgs; [
+              nim
+              nimble
+            ];
+          }
+        )
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            backupFileExtension = "backup";
+            users.x137 = import ./cfg/home.nix;
+            extraSpecialArgs = {
+              inherit inputs system;
+            };
+          };
+        }
+      ];
     };
+  };
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";

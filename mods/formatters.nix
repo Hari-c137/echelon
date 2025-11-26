@@ -1,11 +1,7 @@
-{ pkgs, ... }:
-
-{
-
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     stylua
     shfmt
-    nixfmt
     alejandra
     kdePackages.qt5compat
     kdePackages.qtsvg
