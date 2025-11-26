@@ -3,19 +3,15 @@
   pkgs,
   outputs,
   ...
-}:
-
-let
+}: let
   cachykernel = pkgs.linuxPackages_cachyos.kernel;
-in
-
-{
+in {
   nixpkgs.overlays = [
     outputs.overlays.unstable-packages
     inputs.chaotic.overlays.default
   ];
   chaotic.nyx.cache.enable = true;
-  imports = [ inputs.chaotic.nixosModules.default ];
+  imports = [inputs.chaotic.nixosModules.default];
 
   boot.kernelPackages = pkgs.linuxPackages_cachyos-lto;
   #system.modulesTree = [ (lib.getOutput "modules" cachykernel) ];
