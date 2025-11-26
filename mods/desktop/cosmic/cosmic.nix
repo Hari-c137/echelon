@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   imports = [
     # ./start-cosmic-ext-niri.nix
   ];
@@ -29,6 +28,5 @@
       enable = false;
       xwayland.enable = false;
     };
-
   };
 }

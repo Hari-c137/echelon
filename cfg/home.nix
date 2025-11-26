@@ -1,12 +1,4 @@
-{
-  config,
-  pkgs,
-  inputs,
-  system,
-  ...
-}:
-
-{
+{...}: {
   home.username = "x137";
   home.homeDirectory = "/home/x137";
   home.stateVersion = "25.11";
@@ -26,5 +18,4 @@
     ./mpv.nix
     ./virtualization.nix
   ];
-
 }

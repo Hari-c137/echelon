@@ -1,5 +1,4 @@
-{ pkgs, inputs, ... }:
-{
+{inputs, ...}: {
   imports = [
     inputs.mango.hmModules.mango
   ];
@@ -267,7 +266,5 @@
       noctalia-shell &
       vicinae server
     '';
-
   };
-
 }

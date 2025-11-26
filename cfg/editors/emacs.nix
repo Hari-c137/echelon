@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   programs.emacs = {
     enable = false;
     package = pkgs.emacs-pgtk;

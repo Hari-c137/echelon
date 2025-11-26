@@ -1,10 +1,8 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   programs.yazi = {
     enable = true;
     package = pkgs.yazi;
-    plugins = { };
+    plugins = {};
 
     enableBashIntegration = true;
     enableFishIntegration = true;

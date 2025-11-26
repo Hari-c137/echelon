@@ -1,5 +1,4 @@
-{ pkgs, inputs, ... }:
-{
+{inputs, ...}: {
   imports = [
     inputs.noctalia.homeModules.default
   ];
@@ -9,7 +8,7 @@
     settings = {
       audio = {
         cavaFrameRate = 60;
-        mprisBlacklist = [ ];
+        mprisBlacklist = [];
         preferredPlayer = "";
         visualizerQuality = "high";
         visualizerType = "mirror";
@@ -110,7 +109,7 @@
       };
       notifications = {
         enabled = true;
-        monitors = [ ];
+        monitors = [];
         location = "top_right";
         overlayLayer = true;
         backgroundOpacity = 1;
@@ -122,7 +121,7 @@
       osd = {
         enabled = true;
         location = "top_right";
-        monitors = [ ];
+        monitors = [];
         autoHideMs = 2000;
         overlayLayer = true;
       };
@@ -141,7 +140,7 @@
         transitionDuration = 1500;
         transitionType = "random";
         transitionEdgeSmoothness = 0.05;
-        monitors = [ ];
+        monitors = [];
         panelPosition = "follow_bar";
       };
       screenRecorder = {
@@ -177,5 +176,4 @@
       };
     };
   };
-
 }

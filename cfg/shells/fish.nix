@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-let
+{pkgs, ...}: let
   aliasfish = {
     gs = "git status";
     gd = "git diff";
@@ -14,10 +12,7 @@ let
     ll = "ls -la";
     l = "ls -l";
   };
-
-in
-{
-
+in {
   programs.fish = {
     enable = true;
     shellAliases = aliasfish;
@@ -27,7 +22,5 @@ in
         src = pkgs.fishPlugins.pure;
       }
     ];
-
   };
-
 }

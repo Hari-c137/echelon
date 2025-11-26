@@ -1,6 +1,8 @@
-{ pkgs, inputs, ... }:
-
 {
+  pkgs,
+  inputs,
+  ...
+}: {
   programs.helix = {
     enable = true;
     defaultEditor = false;
@@ -55,5 +57,4 @@
       markdown-oxide
     ];
   };
-
 }
