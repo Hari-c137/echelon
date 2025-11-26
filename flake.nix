@@ -6,6 +6,7 @@
       self,
       nixpkgs,
       chaotic,
+      nixos-generators,
       rust-overlay,
       mango,
       home-manager,
@@ -81,6 +82,10 @@
     };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixos-generators = {
+      url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     mango = {

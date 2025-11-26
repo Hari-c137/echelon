@@ -6,6 +6,7 @@
     stylua
     shfmt
     nixfmt
+    alejandra
     kdePackages.qt5compat
     kdePackages.qtsvg
     kdePackages.qtimageformats

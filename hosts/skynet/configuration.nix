@@ -1,8 +1,6 @@
 {
-  config,
   lib,
   pkgs,
-  inputs,
   ...
 }:
 
@@ -97,6 +95,7 @@
     nautilus
     wget
     ncdu
+    python3Minimal
     gnumake
     nvtopPackages.amd
     cmake
@@ -108,6 +107,6 @@
     fastfetch # cli
   ];
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "26.05";
 
 }
