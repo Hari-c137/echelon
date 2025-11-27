@@ -7,7 +7,7 @@
 | wayland_compositor | niri  | 
 | terminal_emulator  | kitty |
 | text_editor | helix |
-| IDE | doomemacs |
+| IDE | emacs |
 | desktop_shell      | noctalia | 
 
  
