@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.emacs = {
-    enable = false;
-    package = pkgs.emacs-pgtk;
+    enable = true;
+    package = pkgs.emacs-nox;
     extraPackages = epkgs: [
       epkgs.vterm
     ];
