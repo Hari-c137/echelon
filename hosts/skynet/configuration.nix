@@ -32,7 +32,6 @@
       "libvirtd"
     ];
     packages = with pkgs; [
-
     ];
   };
 
@@ -93,7 +92,7 @@
     nautilus
     wget
     ncdu
-    python3Minimal
+    gitui
     gnumake
     nvtopPackages.amd
     cmake
@@ -105,5 +104,5 @@
     fastfetch # cli
   ];
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
 }

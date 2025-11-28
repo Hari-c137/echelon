@@ -1,13 +1,4 @@
-{
-  config,
-  pkgs,
-  chaotic,
-  inputs,
-  ...
-}:
-
-{
-
+{pkgs, ...}: {
   boot.kernelPackages = pkgs.linuxPackages_cachyos-lto;
   #boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.amdgpu.overdrive.enable = true;
@@ -27,5 +18,4 @@
     package = pkgs.ananicy-cpp;
     rulesProvider = pkgs.ananicy-rules-cachyos_git;
   };
-
 }

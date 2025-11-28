@@ -14,6 +14,13 @@
   } @ inputs: let
     system = "x86_64-linux";
   in {
+    buildiso = nixos-generators.nixosGenerate {
+      system = "x86_64-linux";
+      modules = [
+        ./hosts/skynet/configuration.nix
+      ];
+      format = "iso";
+    };
     nixosConfigurations.skynet = nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = {inherit inputs;};
