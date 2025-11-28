@@ -45,9 +45,16 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    # todo (zen, rust-overlay, nixos-generators, wakatime-ls, niri-flake,  noctalia-shell, vicinae, flake-parts)
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
+    # todo ( rust-overlay, nixos-generators, wakatime-ls, niri-flake, , vicinae, flake-parts)
   };
 }
