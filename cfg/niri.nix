@@ -2,15 +2,13 @@
   inputs,
   pkgs,
   ...
-}:
-{
+}: {
   imports = [
-    inputs.niri.homeModules.niri
+    inputs.niri-flake.homeModules.niri
   ];
 
   programs.niri = {
     enable = true;
-    package = pkgs.niri;
+    package = pkgs.niri-unstable;
   };
-
 }

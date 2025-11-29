@@ -6,6 +6,7 @@
     nixpkgs,
     chaotic,
     nixos-generators,
+    niri-flake,
     rust-overlay,
     mango,
     home-manager,
@@ -33,7 +34,7 @@
           }: {
             nixpkgs.overlays = [
               rust-overlay.overlays.default
-              inputs.niri.overlays.niri
+              inputs.niri-flake.overlays.niri
             ];
           }
         )
@@ -96,7 +97,7 @@
       url = "github:DreamMaoMao/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri = {
+    niri-flake = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };

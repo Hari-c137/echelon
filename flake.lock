@@ -183,7 +183,7 @@
         "type": "github"
       }
     },
-    "niri": {
+    "niri-flake": {
       "inputs": {
         "niri-stable": "niri-stable",
         "niri-unstable": "niri-unstable",
@@ -387,7 +387,7 @@
         "chaotic": "chaotic",
         "home-manager": "home-manager_2",
         "mango": "mango",
-        "niri": "niri",
+        "niri-flake": "niri-flake",
         "nixos-generators": "nixos-generators",
         "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
