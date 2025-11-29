@@ -19,8 +19,6 @@
   };
 
   hardware.bluetooth.enable = false;
-  services.tuned.enable = true;
-  services.upower.enable = true;
 
   time.timeZone = "Asia/Kolkata";
   nixpkgs.config.allowUnfree = true;
@@ -32,6 +30,7 @@
       "libvirtd"
     ];
     packages = with pkgs; [
+      tree
     ];
   };
 
@@ -73,14 +72,12 @@
 
   nix.settings = {
     extra-substituters = [
-      "https://vicinae.cachix.org"
     ];
     experimental-features = [
       "nix-command"
       "flakes"
     ];
     extra-trusted-public-keys = [
-      "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
     ];
   };
   environment.systemPackages = with pkgs; [
