@@ -1,4 +1,4 @@
 {
   cachyos = import ./chaotic/cachyos.nix;
-  sudo-rs = import ./oxidize/sudo-rs.nix;
+  oxidize = import ./oxidize/oxidize.nix;
 }

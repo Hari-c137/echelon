@@ -9,7 +9,7 @@
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
     # outputs.nixosModules.cachyos
-    outputs.nixosModules.sudo-rs
+    outputs.nixosModules.oxidize
     outputs.nixosModules.cachyos
 
     # Or modules from other flakes (such as nixos-hardware):
