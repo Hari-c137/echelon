@@ -20,6 +20,10 @@
         auto-save = true;
         auto-format = true;
 
+        file-picker = {
+          hidden = false;
+        };
+
         lsp = {
           enable = true;
           auto-signature-help = true;
