@@ -1,4 +1,8 @@
-## Read The Friendly Source Code
+## DOCS
+documentation is still work-in-progress -- therefore, for the time being you have 2 options:
+
+1. Read The Friendly Source Code
+2. [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Hari-c137/echelon) (high-level overview)
 
 ## system[0]:  x137@skynet
 
