@@ -1,8 +1,7 @@
 ## DOCS
-documentation is still work-in-progress -- therefore, for the time being you have 2 options:
+documentation is still work-in-progress -- therefore, for the time being:
 
-1. Read The Friendly Source Code
-2. [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Hari-c137/echelon) (high-level overview)
+Read The Friendly Source Code
 
 ## system[0]:  x137@skynet
 
