@@ -53,6 +53,9 @@
     niri-flake.url = "github:sodiboo/niri-flake";
     niri-flake.inputs.nixpkgs.follows = "nixpkgs";
 
+    nixos-generators.url = "github:nix-community/nixos-generators";
+    nixos-generators.inputs.nixpkgs.follows = "nixpkgs";
+
     nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
     nix-doom-emacs-unstraightened.inputs.nixpkgs.follows = "";
 
@@ -61,6 +64,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    # todo ( rust-overlay, nixos-generators, wakatime-ls, niri-flake, , vicinae, flake-parts)
+    # todo ( rust-overlay, nixos-generators, wakatime-ls, , flake-parts)
   };
 }

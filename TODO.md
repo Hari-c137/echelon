@@ -4,13 +4,20 @@
 
 - [ ] Desktop Shell
 - [ ] Keyboard centric utils
+- [ ] ISO Generation CI/CD
+- [ ] Devshell 
+
 
 ### In Progress
 
 - [ ] Oxidize  
   - [x] GNU Coreutils -> uutils/coreutils
   - [ ] GNU sudo implementation -> sudo-rs  
+- [ ] mkEnable Configuration system
+  - [x] add nixos-generators flake-input
+  - [ ] configure buildiso output
+
 
 ### Done ✓
 
-- [x] create symlinks system
+- [x] switch to recursive config-symlink system
