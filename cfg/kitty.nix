@@ -6,6 +6,7 @@
     settings = {
       shell = "fish";
       editor = "hx";
+      window_padding_width = 2;
       #    cursor_trail_decay = "0.1 0.4";
     };
     keybindings = {

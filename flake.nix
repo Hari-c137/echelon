@@ -16,9 +16,13 @@
     system = "x86_64-linux";
   in {
     buildiso = nixos-generators.nixosGenerate {
+      specialArgs = {inherit inputs;};
       system = "x86_64-linux";
       modules = [
         ./hosts/skynet/configuration.nix
+        chaotic.nixosModules.default
+        home-manager.nixosModules.home-manager
+        mango.nixosModules.mango
       ];
       format = "iso";
     };
