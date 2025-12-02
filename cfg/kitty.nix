@@ -20,7 +20,7 @@
       "alt+8" = "goto_tab 8";
       "alt+9" = "goto_tab 9";
       "alt+w" = "close_tab";
-      "alt+Tab" = "next_window";
+      "ctrl+Tab" = "next_window";
     };
     font = {
       name = "Iosevka Nerd Font";
