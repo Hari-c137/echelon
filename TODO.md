@@ -13,10 +13,11 @@
 - [ ] Oxidize  
   - [x] GNU Coreutils -> uutils/coreutils
   - [ ] GNU sudo implementation -> sudo-rs  
+
 - [ ] mkEnable Configuration system
   - [x] add nixos-generators flake-input
-  - [ ] configure buildiso output
-
+  - [x] configure buildiso output
+  - [ ] deploy working iso
 
 ### Done ✓
 

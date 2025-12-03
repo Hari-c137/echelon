@@ -6,6 +6,7 @@
     nixpkgs,
     home-manager,
     chaotic,
+    nixos-generators,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -39,6 +40,15 @@
           ./home-manager/home.nix
         ];
       };
+    };
+
+    isobuild = nixos-generators.nixosGenerate {
+      specialArgs = {inherit inputs outputs;};
+      system = "x86_64-linux";
+      modules = [
+        ./hosts/x137-skynet/configuration.nix
+      ];
+      format = "iso";
     };
   };
 
