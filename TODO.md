@@ -3,6 +3,9 @@
 ### Todo
 
 - [ ] Desktop Shell
+- [ ] text_editor
+- [ ] terminal
+- [ ] wayland_compositor
 - [ ] Keyboard centric utils
 - [ ] ISO Generation CI/CD
 - [ ] Devshell 
