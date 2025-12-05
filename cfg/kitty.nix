@@ -35,6 +35,7 @@
       cursor_trail = 1;
       show_hyperlink_targets = "yes";
       repaint_delay = 7;
+      dynamic_background_opacity = "yes";
       input_delay = 2;
       sync_to_monitor = "yes";
       tab_bar_edge = "top";
