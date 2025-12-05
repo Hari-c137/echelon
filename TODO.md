@@ -5,7 +5,12 @@
 - [ ] Desktop Shell
 - [ ] text_editor
 - [ ] terminal
+- [ ] custom(iced-rs -> libcosmic -> package(nix))
 - [ ] wayland_compositor
+ -[ ] niri
+ -[ ] cosmic-epoch
+- [ ] Disko
+- [ ] SOPS
 - [ ] Keyboard centric utils
 - [ ] ISO Generation CI/CD
 - [ ] Devshell 
@@ -15,7 +20,8 @@
 
 - [ ] Oxidize  
   - [x] GNU Coreutils -> uutils/coreutils
-  - [ ] GNU sudo implementation -> sudo-rs  
+  - [x] GNU sudo implementation -> sudo-rs  
+  - [ ] ...
 
 - [ ] mkEnable Configuration system
   - [x] add nixos-generators flake-input
@@ -25,3 +31,9 @@
 ### Done ✓
 
 - [x] switch to recursive config-symlink system
+
+
+### Notes
+
+branch: {main,ue} -> (main<-ue, template<-ue) -> (master<-ue, template)
+
