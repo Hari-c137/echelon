@@ -10,6 +10,7 @@
     ./programs/programs.nix
     ./cli/cli.nix
     ./kitty.nix
+    ./foot.nix
     ./mangowc.nix
     ./wall.nix
     ./quickshell.nix
