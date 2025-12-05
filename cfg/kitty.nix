@@ -24,7 +24,7 @@
     };
     font = {
       name = "Iosevka Nerd Font";
-      size = 13.0;
+      size = 14.5;
     };
     enableGitIntegration = true;
     shellIntegration.enableFishIntegration = true;

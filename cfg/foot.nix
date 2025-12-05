@@ -1,8 +1,3 @@
 {...}: {
-  programs.foot = {
-    enable = true;
-    enableFishIntegration = true;
-    settings = {
-    };
-  };
+  programs.foot.enable = true;
 }
