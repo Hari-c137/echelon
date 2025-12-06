@@ -28,6 +28,8 @@
           enable = true;
           auto-signature-help = true;
           display-messages = true;
+          display-inlay-hints = true;
+          inlay-hints-length-limit = 5;
         };
       };
     };

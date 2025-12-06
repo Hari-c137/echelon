@@ -2,15 +2,12 @@
   description = "Echelon";
 
   outputs = {
-    self,
     nixpkgs,
     chaotic,
     nixos-generators,
-    niri-flake,
     rust-overlay,
     mango,
     home-manager,
-    zen-browser,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -31,11 +28,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         (
-          {
-            pkgs,
-            lib,
-            ...
-          }: {
+          {...}: {
             nixpkgs.overlays = [
               rust-overlay.overlays.default
               inputs.niri-flake.overlays.niri
