@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   programs.helix = {
     enable = true;
     defaultEditor = true;
@@ -9,6 +13,7 @@
       rust-analyzer
       nixd
       nimlangserver
+      inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
     ];
 
     settings = {
