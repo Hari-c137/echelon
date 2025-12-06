@@ -3,7 +3,6 @@
 ### Todo
 
 - [ ] Desktop Shell
-- [ ] text_editor
 - [ ] terminal
 - [ ] custom(iced-rs -> libcosmic -> package(nix))
 - [ ] wayland_compositor
@@ -22,6 +21,10 @@
   - [x] GNU Coreutils -> uutils/coreutils
   - [x] GNU sudo implementation -> sudo-rs  
   - [ ] ...
+
+- [ ] text_editor
+ - [x] helix
+ - [ ] zed
 
 - [ ] mkEnable Configuration system
   - [x] add nixos-generators flake-input

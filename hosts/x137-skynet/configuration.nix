@@ -7,8 +7,6 @@
   ...
 }: {
   imports = [
-    # If you want to use modules your own flake exports (from modules/nixos):
-    # outputs.nixosModules.cachyos
     outputs.nixosModules.oxidize
     outputs.nixosModules.cachyos
 

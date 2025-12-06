@@ -28,6 +28,7 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/x137-skynet/configuration.nix
+          chaotic.nixosModules.default
         ];
       };
     };
