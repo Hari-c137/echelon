@@ -36,13 +36,17 @@
       command = "wakatime-ls";
     };
 
+    languages.language-server.nixd = {
+      command = "nixd";
+    };
+
     languages.language = [
       {
         name = "nix";
         auto-format = true;
         formatter.command = "${pkgs.alejandra}/bin/alejandra";
         language-servers = [
-          "nil"
+          "nixd"
           "wakatime"
         ];
       }
@@ -55,7 +59,7 @@
       }
     ];
     extraPackages = with pkgs; [
-      nil
+      nixd
       inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
       markdown-oxide
     ];
