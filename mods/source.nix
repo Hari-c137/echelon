@@ -1,6 +1,4 @@
-{ pkgs, config, ... }:
-{
-
+{...}: {
   imports = [
     ./desktop/cosmic/default.nix
     ./shell.nix
@@ -16,5 +14,4 @@
     ./scripts.nix
     ./virtualization.nix
   ];
-
 }
