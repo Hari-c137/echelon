@@ -1,7 +1,7 @@
 input {
   keyboard {
     xkb      {
-    layout "us"
+    layout "us,us(colemak_dh)"
 }
   repeat-delay 250
   repeat-rate 100
@@ -117,7 +117,8 @@ binds {
     Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
 
     Mod+Return      { spawn "kitty"; }
-    Mod+Shift+B   { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
+    Mod+Shift+B     { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
+    Mod+Space       { spawn  "sh" "-c" "niri msg action switch-layout next"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
