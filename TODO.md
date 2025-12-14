@@ -4,7 +4,7 @@
 
 - [ ] Desktop Shell
 - [ ] terminal
-- [ ] custom(iced-rs -> libcosmic -> package(nix))
+- [ ] desktopshell(ewwii (nix))
 - [ ] wayland_compositor
  -[ ] niri
  -[ ] cosmic-epoch
