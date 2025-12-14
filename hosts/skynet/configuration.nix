@@ -28,6 +28,7 @@
     extraGroups = [
       "wheel"
       "libvirtd"
+      "networkmanager"
     ];
     packages = with pkgs; [
       tree

@@ -1,5 +1,4 @@
 {pkgs, ...}: {
-  #boot.kernelPackages = pkgs.linuxPackages_cachyos-lto;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   hardware.amdgpu.overdrive.enable = true;
   hardware.amdgpu.initrd.enable = true;
@@ -14,7 +13,6 @@
     lact.enable = true;
   };
 
-  #chaotic.mesa-git.enable = true;
   services.ananicy = {
     enable = true;
     package = pkgs.ananicy-cpp;

@@ -3,7 +3,6 @@
 
   outputs = {
     nixpkgs,
-    chaotic,
     nixos-generators,
     rust-overlay,
     mango,
@@ -17,7 +16,6 @@
       system = "x86_64-linux";
       modules = [
         ./hosts/skynet/configuration.nix
-        chaotic.nixosModules.default
         home-manager.nixosModules.home-manager
         mango.nixosModules.mango
       ];
@@ -36,7 +34,6 @@
           }
         )
         ./hosts/skynet/configuration.nix
-        chaotic.nixosModules.default
         mango.nixosModules.mango
         (
           {pkgs, ...}: {
@@ -73,7 +70,6 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
