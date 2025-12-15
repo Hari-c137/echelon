@@ -6,6 +6,7 @@
     kdePackages.qt5compat
     kdePackages.qtsvg
     kdePackages.qtimageformats
+    nimlangserver
     kdePackages.qtmultimedia
     kdePackages.qtdeclarative
     rust-analyzer
