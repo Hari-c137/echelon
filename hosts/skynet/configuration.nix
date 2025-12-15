@@ -75,6 +75,7 @@
     wget
     ncdu
     gitui
+    microfetch
     gnumake
     nvtopPackages.amd
     cmake
@@ -83,7 +84,6 @@
     curl
     heroic # gaming
     pwvucontrol # audio
-    fastfetch # cli
   ];
 
   system.stateVersion = "26.05";
