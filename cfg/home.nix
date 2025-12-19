@@ -9,8 +9,8 @@
     ./shells/shells.nix
     ./programs/programs.nix
     ./cli/cli.nix
-    ./kitty.nix
     ./foot.nix
+    ./terminal
     ./mangowc.nix
     ./wall.nix
     ./quickshell.nix
