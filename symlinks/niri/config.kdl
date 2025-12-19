@@ -65,8 +65,8 @@ environment {
     EGL_PLATFORM "wayland"
     DISPLAY ":0"
     CLUTTER_BACKEND "wayland"
-    TERM "kitty"
-    TERMINAL "kitty"
+    TERM "ghostty"
+    TERMINAL "ghostty"
     _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORMTHEME "qt6ct"
@@ -116,9 +116,10 @@ binds {
     Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
     Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
 
-    Mod+Return      { spawn "kitty"; }
-    Mod+Shift+B     { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
-    Mod+Space       { spawn  "sh" "-c" "niri msg action switch-layout next"; }
+    Mod+Return       { spawn "ghostty"; }
+    Mod+Shift+Return { spawn "kitty"; }
+    Mod+Shift+B      { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
+    Mod+Space        { spawn  "sh" "-c" "niri msg action switch-layout next"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }

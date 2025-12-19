@@ -7,7 +7,7 @@
     enable = true;
     defaultEditor = false;
     settings = {
-      theme = "ayu_dark";
+      theme = "gruvbox-material";
       editor.cursor-shape = {
         normal = "block";
         insert = "bar";
