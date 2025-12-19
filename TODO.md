@@ -4,6 +4,8 @@
 
 - [ ] Desktop Shell
 - [ ] terminal
+ - [ ] ghostty configurations
+ - [ ] kitty configurations
 - [ ] desktopshell(ewwii (nix))
 - [ ] wayland_compositor
  -[ ] niri
