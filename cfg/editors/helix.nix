@@ -13,6 +13,12 @@
         insert = "bar";
         select = "underline";
       };
+
+      keys = {
+        normal = {
+          ret = "goto_word";
+        };
+      };
       editor = {
         line-number = "relative";
         mouse = false;
