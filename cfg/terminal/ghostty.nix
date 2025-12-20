@@ -8,7 +8,7 @@
       font-family = "Iosevka Nerd Font";
       theme = "Gruvbox Material Dark";
       command = "/run/current-system/sw/bin/fish";
-      custom-shader = "~/code/echelon/workers/cursor_warp.glsl";
+      custom-shader = "~/code/echelon/workers/shaders/cursor_warp.glsl";
     };
   };
 }
