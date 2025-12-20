@@ -269,7 +269,7 @@
         criticalColor = "";
       };
       dock = {
-        enabled = true;
+        enabled = false;
         displayMode = "auto_hide";
         backgroundOpacity = 1;
         floatingRatio = 1;
@@ -283,7 +283,7 @@
         deadOpacity = 0.6;
       };
       network = {
-        wifiEnabled = true;
+        wifiEnabled = false;
       };
       sessionMenu = {
         enableCountdown = true;
