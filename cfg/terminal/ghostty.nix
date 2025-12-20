@@ -8,7 +8,7 @@
       font-family = "Iosevka Nerd Font";
       theme = "Gruvbox Material Dark";
       command = "/run/current-system/sw/bin/fish";
-      custom-shader = "../terminal/cursor.glsl";
+      custom-shader = "./cursor_warp.glsl";
     };
   };
 }
