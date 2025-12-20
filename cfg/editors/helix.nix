@@ -5,7 +5,7 @@
 }: {
   programs.helix = {
     enable = true;
-    defaultEditor = false;
+    defaultEditor = true;
     settings = {
       theme = "gruvbox-material";
       editor.cursor-shape = {
