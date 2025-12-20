@@ -67,8 +67,10 @@
       }
     ];
     extraPackages = with pkgs; [
-      nixd
       inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
+      rust-analyzer
+      wgsl-analyzer
+      nixd
       markdown-oxide
     ];
   };

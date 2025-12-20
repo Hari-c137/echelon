@@ -9,7 +9,6 @@
     nimlangserver
     kdePackages.qtmultimedia
     kdePackages.qtdeclarative
-    rust-analyzer
     wasm-pack
   ];
 }
