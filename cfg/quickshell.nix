@@ -81,7 +81,7 @@
         iRadiusRatio = 1;
         boxRadiusRatio = 1;
         screenRadiusRatio = 1;
-        animationSpeed = 1;
+        animationSpeed = 1.37;
         animationDisabled = false;
         compactLockScreen = false;
         lockOnSuspend = true;
