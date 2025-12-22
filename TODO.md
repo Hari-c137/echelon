@@ -6,10 +6,15 @@
 - [ ] terminal
  - [ ] ghostty configurations
  - [ ] kitty configurations
-- [ ] desktopshell(ewwii (nix))
+- [ ] desktopshell
+ -[ ] noctalia
+ -[ ] custom (ewwii + nixpkgs)
 - [ ] wayland_compositor
  -[ ] niri
  -[ ] cosmic-epoch
+- [ ] launcher
+ - [ ] vicinae(primary)
+ - [ ] custom
 - [ ] Disko
 - [ ] SOPS
 - [ ] Keyboard centric utils

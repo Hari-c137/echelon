@@ -11,13 +11,14 @@
     extraPackages = with pkgs; [
       markdown-oxide
       rust-analyzer
-      nixd
       nimlangserver
+      glsl_analyzer
+      nixd
       inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
-    ];
+    ]; # rust, nim, glsl, nix
 
     settings = {
-      theme = "gruvbox";
+      theme = "gruvbox-material";
       editor = {
         mouse = false;
         line-number = "relative";
