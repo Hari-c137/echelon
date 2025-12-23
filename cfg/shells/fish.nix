@@ -6,6 +6,7 @@
     x = "exit";
     mc = "make clean";
     mr = "make release";
+    asdf = "frnb";
     md = "make debug";
     re = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet";
     up = "sudo nixos-rebuild --upgrade switch --flake ~/code/echelon#skynet";
