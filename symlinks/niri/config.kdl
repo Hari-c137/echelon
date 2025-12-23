@@ -187,6 +187,11 @@ binds {
     XF86MonBrightnessUp { spawn  "noctalia-shell" "ipc" "call" "brightness" "increase"; }
     XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
 
+    F5 { spawn "niri" "msg" "action" "screenshot"; }
+    F10 { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    F11 { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+    F12 { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
+
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
     Mod+3 { focus-workspace 3; }
