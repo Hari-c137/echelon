@@ -7,8 +7,8 @@
         editor = "hx";
       };
       user = {
-        name = "ClearlyOpaque";
-        email = "hariprasadaji465@gmail.com";
+        name = "clearlyopaque";
+        email = "ramk487574@gmail.com";
       };
     };
   };
