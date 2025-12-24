@@ -44,14 +44,6 @@
             ];
           }
         )
-        (
-          {pkgs, ...}: {
-            environment.systemPackages = with pkgs; [
-              nim
-              nimble
-            ];
-          }
-        )
         home-manager.nixosModules.home-manager
         {
           home-manager = {

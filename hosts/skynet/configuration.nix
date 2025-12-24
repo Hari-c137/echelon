@@ -74,6 +74,8 @@
     nautilus
     wget
     ncdu
+    nim
+    nimble
     gitui
     microfetch
     gnumake
