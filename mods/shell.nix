@@ -9,10 +9,10 @@ in {
   programs.git = {
     enable = true;
     config = {
-      init.defaultBranch = "main";
+      init.defaultBranch = "master";
       user = {
         name = "clearlyopaque";
-        email = "ramk487574@gmail.com";
+        email = "hariprasadaji465@gmail.com";
       };
     };
   };
