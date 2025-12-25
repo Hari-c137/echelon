@@ -70,6 +70,7 @@
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
     btop # remove
+    usbutils
     polkit_gnome
     gcc # voidbox
     nautilus
