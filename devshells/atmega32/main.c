@@ -3,7 +3,7 @@
 #include <avr/io.h>
 #include <stdio.h>
 
-void main() {
+int main() {
   DDRC = 0xFF;
   printf("Hello World");
 }
