@@ -44,6 +44,20 @@
       command = "wakatime-ls";
     };
 
+    languages.language-server.tinymist = {
+      command = "tinymist";
+      config = {
+        typstExtraArgs = ["main.typ"];
+        exportPdf = "oneType";
+        preview.background.enabled = true;
+        preview.background.args = [
+          "--data-plane-host=127.0.0.1:0"
+          "--invert-colors=never"
+          "--open"
+        ];
+      };
+    };
+
     languages.language-server.nixd = {
       command = "nixd";
     };
@@ -59,9 +73,40 @@
         ];
       }
       {
+        name = "cpp";
+        auto-format = true;
+        language-servers = [
+          "clangd"
+          "wakatime"
+        ];
+      }
+      {
+        name = "glsl";
+        auto-format = true;
+        language-servers = [
+          "glsl_analyzer"
+          "wakatime"
+        ];
+      }
+      {
+        name = "nim";
+        auto-format = true;
+        language-servers = [
+          "nimlangserver"
+          "wakatime"
+        ];
+      }
+      {
         name = "rust";
         language-servers = [
           "rust-analyzer"
+          "wakatime"
+        ];
+      }
+      {
+        name = "typst";
+        language-servers = [
+          "tinymist"
           "wakatime"
         ];
       }
@@ -70,8 +115,9 @@
       inputs.wakatime-ls.packages."${stdenv.hostPlatform.system}".default
       rust-analyzer
       wgsl-analyzer
-      nixd
       markdown-oxide
+      nixd
+      clang-tools
     ];
   };
 }

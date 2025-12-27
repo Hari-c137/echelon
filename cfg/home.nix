@@ -8,6 +8,7 @@
     ./editors/editors.nix
     ./shells/shells.nix
     ./programs/programs.nix
+    ./typst.nix
     ./cli/cli.nix
     ./foot.nix
     ./terminal
