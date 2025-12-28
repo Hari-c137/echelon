@@ -78,6 +78,7 @@
     ncdu
     nim
     nimble
+    nph
     gitui
     microfetch
     gnumake

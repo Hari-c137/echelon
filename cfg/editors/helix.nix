@@ -91,6 +91,7 @@
       {
         name = "nim";
         auto-format = true;
+        formatter.command = "nph";
         language-servers = [
           "nimlangserver"
           "wakatime"
