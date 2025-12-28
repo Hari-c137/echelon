@@ -4,6 +4,7 @@
     ./shell.nix
     ./performance.nix
     ./qbit.nix
+    ./i2p.nix
     ./audio.nix
     ./noctalia.nix
     ./mangowc.nix
