@@ -5,7 +5,6 @@
     self,
     nixpkgs,
     home-manager,
-    chaotic,
     nixos-generators,
     ...
   } @ inputs: let
@@ -28,7 +27,6 @@
         specialArgs = {inherit inputs outputs;};
         modules = [
           ./hosts/x137-skynet/configuration.nix
-          chaotic.nixosModules.default
         ];
       };
     };
@@ -59,7 +57,6 @@
 
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     niri-flake.url = "github:sodiboo/niri-flake";
     niri-flake.inputs.nixpkgs.follows = "nixpkgs";

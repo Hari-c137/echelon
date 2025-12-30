@@ -1,23 +1,17 @@
 {
-  inputs,
   pkgs,
   outputs,
   ...
-}: let
-  cachykernel = pkgs.linuxPackages_cachyos.kernel;
-in {
+}: {
   nixpkgs.overlays = [
     outputs.overlays.unstable-packages
-    inputs.chaotic.overlays.default
   ];
-  chaotic.nyx.cache.enable = true;
-  imports = [inputs.chaotic.nixosModules.default];
 
-  boot.kernelPackages = pkgs.linuxPackages_cachyos-lto;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   #system.modulesTree = [ (lib.getOutput "modules" cachykernel) ];
   services.ananicy = {
     package = pkgs.ananicy-cpp;
-    rulesProvider = pkgs.ananicy-rules-cachyos_git;
+    rulesProvider = pkgs.ananicy-rules-cachyos;
     enable = true;
   };
 }
