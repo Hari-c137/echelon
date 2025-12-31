@@ -10,6 +10,7 @@
     ./programs/programs.nix
     ./typst.nix
     ./cli/cli.nix
+    ./zellij.nix
     ./foot.nix
     ./terminal
     ./mangowc.nix
