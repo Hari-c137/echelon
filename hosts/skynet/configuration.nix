@@ -71,6 +71,7 @@
     wl-clipboard
     btop # remove
     usbutils
+    imhex
     polkit_gnome
     gcc # voidbox
     nautilus
