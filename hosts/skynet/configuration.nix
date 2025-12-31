@@ -78,6 +78,7 @@
     wget
     ncdu
     nim
+    tig
     nimble
     nph
     gitui

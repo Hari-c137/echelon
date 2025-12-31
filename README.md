@@ -8,9 +8,9 @@ Read The Friendly Source Code
 | Components | Software |
 |:----------|:-----------:|
 | wayland_compositor | niri  | 
-| terminal_emulator  | kitty |
+| terminal_emulator  | alacritty |
 | text_editor | helix |
-| IDE | emacs |
+| IDE | zen |
 | desktop_shell      | noctalia | 
 
  
