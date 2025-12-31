@@ -50,6 +50,7 @@ overview {
 }
 
 spawn-at-startup "noctalia-shell"
+spawn-at-startup "alacritty" "--daemon"
 spawn-at-startup "vicinae" "server"
 
 environment {
@@ -116,7 +117,8 @@ binds {
     Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
     Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
 
-    Mod+Return       { spawn "ghostty"; }
+    Mod+Return       { spawn "alacritty" "msg" "create-window"; }
+    // Mod+Return       { spawn "ghostty"; }
     Mod+Shift+Return { spawn "kitten" "quick-access-terminal"; }
     Mod+Shift+B      { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Space        { spawn  "sh" "-c" "niri msg action switch-layout next"; }

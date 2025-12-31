@@ -1,6 +1,5 @@
 {
   description = "Echelon";
-
   outputs = {
     nixpkgs,
     nixos-generators,
@@ -59,7 +58,6 @@
       ];
     };
   };
-
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     rust-overlay = {
