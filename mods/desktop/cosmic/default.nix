@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./cosmic.nix
-    ./start-cosmic-ext-niri.nix
+    #   ./cosmic.nix
+    #   ./start-cosmic-ext-niri.nix
   ];
 }
