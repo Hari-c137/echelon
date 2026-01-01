@@ -32,7 +32,7 @@
       scrollback_lines = 2000;
       enable_audio_bell = "no";
       cursor_shape = "beam";
-      cursor_trail = 1;
+      cursor_trail = 0;
       show_hyperlink_targets = "yes";
       repaint_delay = 7;
       dynamic_background_opacity = "yes";
