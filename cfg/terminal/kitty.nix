@@ -2,11 +2,12 @@
   programs.kitty = {
     enable = true;
     package = pkgs.kitty;
-    themeFile = "ayu";
+    themeFile = "GruvboxMaterialDarkMedium";
     settings = {
       shell = "fish";
       editor = "hx";
-      window_padding_width = 2;
+      window_padding_width = 0;
+      # window_padding_width = 2;
       #    cursor_trail_decay = "0.1 0.4";
     };
     keybindings = {
@@ -24,12 +25,12 @@
     };
     font = {
       name = "Iosevka Nerd Font";
-      size = 14.5;
+      size = 17;
     };
     enableGitIntegration = true;
     shellIntegration.enableFishIntegration = true;
     settings = {
-      scrollback_lines = 2000;
+      scrollback_lines = 20000;
       enable_audio_bell = "no";
       cursor_shape = "beam";
       cursor_trail = 0;

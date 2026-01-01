@@ -10,7 +10,7 @@
         program = "${pkgs.fish}/bin/fish";
       };
       font = {
-        size = 14.0;
+        size = 18.0;
         normal = {
           family = "Iosevka Nerd Font";
           style = "Regular";
