@@ -4,7 +4,7 @@
   ];
 
   wayland.windowManager.mango = {
-    enable = true;
+    enable = false;
 
     settings = ''
 

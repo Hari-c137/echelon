@@ -1,3 +1,3 @@
 {...}: {
-  programs.mango.enable = true;
+  programs.mango.enable = false;
 }

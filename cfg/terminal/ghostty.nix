@@ -1,6 +1,6 @@
 {...}: {
   programs.ghostty = {
-    enable = true;
+    enable = false;
     enableFishIntegration = true;
     installBatSyntax = true;
     settings = {

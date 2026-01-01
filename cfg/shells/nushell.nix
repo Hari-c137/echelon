@@ -1,6 +1,6 @@
 {...}: {
   programs.nushell = {
-    enable = true;
+    enable = false;
     shellAliases = {
       gs = "git status";
       gd = "git diff";

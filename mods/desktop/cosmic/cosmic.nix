@@ -25,8 +25,8 @@
 
   services = {
     desktopManager.cosmic = {
-      enable = true;
-      xwayland.enable = true;
+      enable = false;
+      xwayland.enable = false;
     };
   };
 }
