@@ -66,11 +66,10 @@ environment {
     EGL_PLATFORM "wayland"
     DISPLAY ":0"
     CLUTTER_BACKEND "wayland"
-    TERM "ghostty"
-    TERMINAL "ghostty"
+    TERM "kitty"
+    TERMINAL "kitty"
     _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
-    QT_QPA_PLATFORMTHEME "qt6ct"
     RADV_PERFTEST "video_decode"
     //nv GSK_RENDERER "ngl"
     //nv NVD_BACKEND "direct"
@@ -78,6 +77,8 @@ environment {
     //nv __GL_GSYNC_ALLOWED "1"
     //nv __GL_SHADER_DISK_CACHE_SKIP_CLEANUP "1"
     //nv __GL_YIELD "USLEEP"
+    QT_QPA_PLATFORMTHEME "xdgdesktopportal"
+	GTK_USE_PORTAL "1"
 }
 
 prefer-no-csd
@@ -117,9 +118,8 @@ binds {
     Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
     Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
 
-    Mod+Return       { spawn "alacritty" "msg" "create-window"; }
-    // Mod+Return       { spawn "ghostty"; }
-    Mod+Shift+Return { spawn "kitten" "quick-access-terminal"; }
+    Mod+Return       { spawn "kitty"; }
+    Mod+Shift+Return { spawn "alacritty" "msg" "create-window"; }
     Mod+Shift+B      { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Space        { spawn  "sh" "-c" "niri msg action switch-layout next"; }
 
