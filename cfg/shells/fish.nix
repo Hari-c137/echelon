@@ -7,6 +7,7 @@
     mc = "make clean";
     mr = "make release";
     asdf = "frnb";
+    btop = "btm";
     md = "make debug";
     re = "sudo nixos-rebuild switch --flake ~/code/echelon#skynet";
     up = "sudo nixos-rebuild --upgrade switch --flake ~/code/echelon#skynet";

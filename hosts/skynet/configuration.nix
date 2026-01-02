@@ -69,7 +69,6 @@
   environment.systemPackages = with pkgs; [
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
-    btop # remove
     usbutils
     imhex
     polkit_gnome
