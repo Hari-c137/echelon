@@ -20,8 +20,16 @@
       "alt+7" = "goto_tab 7";
       "alt+8" = "goto_tab 8";
       "alt+9" = "goto_tab 9";
-      "alt+w" = "close_tab";
-      "ctrl+Tab" = "next_window";
+
+      "alt+enter" = "new_window";
+      "alt+space" = "new_tab";
+      "alt+c" = "close_window";
+      "alt+q" = "close_tab";
+
+      "alt+k" = "neighboring_window up";
+      "alt+j" = "neighboring_window down";
+      "alt+h" = "neighboring_window left";
+      "alt+l" = "neighboring_window right";
     };
     font = {
       name = "Iosevka Nerd Font";
@@ -38,6 +46,7 @@
       repaint_delay = 7;
       dynamic_background_opacity = "yes";
       input_delay = 2;
+      enabled_layouts = "tall, stack, fat, vertical";
       sync_to_monitor = "yes";
       tab_bar_edge = "top";
       tab_bar_min_tabs = 2;
