@@ -72,6 +72,7 @@
     usbutils
     imhex
     polkit_gnome
+    rsclock
     gcc # voidbox
     nautilus
     wget
