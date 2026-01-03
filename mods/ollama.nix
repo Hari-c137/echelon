@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   services.ollama = {
-    enable = true;
+    enable = false;
     package = pkgs.ollama-rocm;
     loadModels = [
       "deepseek-r1:7b"
