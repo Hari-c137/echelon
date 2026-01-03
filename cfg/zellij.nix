@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   programs.zellij = {
-    enable = true;
+    enable = false;
     package = pkgs.zellij;
     enableFishIntegration = false;
   };

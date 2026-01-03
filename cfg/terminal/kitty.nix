@@ -23,8 +23,8 @@
 
       "alt+enter" = "new_window";
       "alt+space" = "new_tab";
-      "alt+c" = "close_window";
-      "alt+q" = "close_tab";
+      "alt+w" = "close_window";
+      "alt+c" = "close_tab";
 
       "alt+k" = "neighboring_window up";
       "alt+j" = "neighboring_window down";
@@ -33,7 +33,7 @@
     };
     font = {
       name = "Iosevka Nerd Font";
-      size = 17;
+      size = 13.7;
     };
     enableGitIntegration = true;
     shellIntegration.enableFishIntegration = true;

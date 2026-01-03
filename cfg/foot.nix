@@ -1,3 +1,3 @@
 {...}: {
-  programs.foot.enable = true;
+  programs.foot.enable = false;
 }
