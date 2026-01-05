@@ -3,7 +3,7 @@
   lib,
   ...
 }: let
-  cfgs = ["niri" "doom" "ewwii" "nvim" "mpv"];
+  cfgs = ["niri" "doom" "ewwii" "nvim" "mpv" "wezterm"];
 in {
   xdg.configFile = lib.genAttrs cfgs (name: {
     source =

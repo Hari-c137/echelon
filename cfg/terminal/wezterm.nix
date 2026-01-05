@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   programs.wezterm = {
-    enable = true;
+    enable = false;
     package = pkgs.wezterm;
   };
 }
