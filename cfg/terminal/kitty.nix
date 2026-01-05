@@ -39,6 +39,7 @@
     shellIntegration.enableFishIntegration = true;
     settings = {
       scrollback_lines = 20000;
+      scrollbar = "never";
       enable_audio_bell = "no";
       cursor_shape = "beam";
       cursor_trail = 0;

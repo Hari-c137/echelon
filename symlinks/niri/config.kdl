@@ -68,6 +68,7 @@ environment {
     CLUTTER_BACKEND "wayland"
     TERM "kitty"
     TERMINAL "kitty"
+    EDITOR "hx"
     _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     RADV_PERFTEST "video_decode"

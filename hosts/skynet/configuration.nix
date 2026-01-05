@@ -71,6 +71,7 @@
     wl-clipboard
     usbutils
     imhex
+    gitu
     polkit_gnome
     rsclock
     gcc # voidbox
@@ -78,7 +79,6 @@
     wget
     ncdu
     nim
-    tig
     nimble
     nph
     gitui
