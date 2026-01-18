@@ -65,7 +65,7 @@
     languages.language = [
       {
         name = "nix";
-        auto-format = true;
+        auto-format = false;
         formatter.command = "${pkgs.alejandra}/bin/alejandra";
         language-servers = [
           "nixd"
