@@ -19,5 +19,5 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [librewolf];
+  # environment.systemPackages = with pkgs; [librewolf];
 }
