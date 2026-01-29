@@ -81,7 +81,6 @@
     nim
     nimble
     nph
-    # gitui
     microfetch
     gnumake
     nvtopPackages.amd
