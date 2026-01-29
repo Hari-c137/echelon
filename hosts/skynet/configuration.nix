@@ -71,7 +71,7 @@
     wl-clipboard
     usbutils
     imhex
-    gitu
+    # gitu
     polkit_gnome
     rsclock
     gcc # voidbox
