@@ -1,5 +1,5 @@
 {
-  description = "devshell for ATmega32 development";
+  description = "devshell for AndroidStudio development";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -7,7 +7,6 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     flake-utils,
     ...
@@ -17,7 +16,7 @@
       cross = pkgs.pkgsCross.avr;
     in {
       devShells.default = pkgs.mkShell {
-        name = "avr-devshell";
+        name = "android-studio";
 
         buildInputs = [
           cross.buildPackages.gcc
@@ -27,10 +26,10 @@
         ];
 
         shellHook = ''
-          echo "AVR dev shell active"
-          echo "CC = $CC"
-          echo "AR = $AR"
-          echo "Simulide binary: $(which simulide)"
+          echo "AndroidStudio dev shell active"
+          # echo "CC = $CC"
+          # echo "AR = $AR"
+          # echo "Simulide binary: $(which simulide)"
         '';
       };
     });
