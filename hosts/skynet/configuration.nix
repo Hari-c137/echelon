@@ -77,6 +77,7 @@
     gcc # voidbox
     nautilus
     wget
+    nodejs
     ncdu
     nim
     nimble
