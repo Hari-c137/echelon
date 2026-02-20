@@ -1,0 +1,4 @@
+# https://github.com/rui314/mold?tab=readme-ov-file#how-to-use
+[target.'cfg(target_os = "linux")']
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=mold"]

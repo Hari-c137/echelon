@@ -1,0 +1,74 @@
+[package]
+name         = "microfetch"
+description  = "Microscopic fetch tool in Rust, for NixOS systems, with special emphasis on speed"
+version      = "0.4.13"
+edition      = "2024"
+authors      = [ "NotAShelf <raf@notashelf.dev>" ]
+rust-version = "1.91.0"
+readme       = "./docs/README.md"
+repository   = "https://github.com/notashelf/microfetch"
+license      = "GPL-3.0"
+
+[lib]
+name = "microfetch_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "microfetch"
+path = "src/main.rs"
+
+[dependencies]
+hotpath = { optional = true, version = "0.10.1" }
+libc    = "0.2.182"
+
+[dev-dependencies]
+criterion = "0.8.1"
+
+[features]
+hotpath       = [ "dep:hotpath", "hotpath/hotpath" ]
+hotpath-alloc = [ "hotpath/hotpath-alloc" ]
+hotpath-off   = [ "hotpath/hotpath-off" ]
+
+[[bench]]
+harness = false
+name    = "benchmark"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+codegen-units = 1
+lto           = true
+opt-level     = "s"
+panic         = "abort"
+strip         = true
+
+[profile.profiler]
+debug           = true
+inherits        = "release"
+split-debuginfo = "unpacked"
+strip           = "none"
+
+[lints.clippy]
+complexity = { level = "warn", priority = -1 }
+nursery    = { level = "warn", priority = -1 }
+pedantic   = { level = "warn", priority = -1 }
+perf       = { level = "warn", priority = -1 }
+style      = { level = "warn", priority = -1 }
+
+# The lint groups above enable some less-than-desirable rules, we should manually
+# enable those to keep our sanity.
+absolute_paths                 = "allow"
+arbitrary_source_item_ordering = "allow"
+implicit_return                = "allow"
+missing_docs_in_private_items  = "allow"
+non_ascii_literal              = "allow"
+pattern_type_mismatch          = "allow"
+print_stdout                   = "allow"
+question_mark_used             = "allow"
+similar_names                  = "allow"
+single_call_fn                 = "allow"
+std_instead_of_core            = "allow"
+too_long_first_doc_paragraph   = "allow"
+too_many_lines                 = "allow"
+unused_trait_names             = "allow"
