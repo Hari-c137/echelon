@@ -66,6 +66,11 @@
     extra-trusted-public-keys = [
     ];
   };
+
+  nixpkgs.config = { android_sdk.accept_license = true; };
+
+  programs.gpu-screen-recorder.enable = true;
+  
   environment.systemPackages = with pkgs; [
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
@@ -76,6 +81,7 @@
     rsclock
     gcc # voidbox
     nautilus
+    android-studio-full
     wget
     nodejs
     ncdu
