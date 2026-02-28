@@ -1,5 +1,4 @@
-{inputs, ... }:
-{
+{inputs, ... }: {
     imports = [
       inputs.noctalia.homeModules.default
     ];
@@ -10,9 +9,9 @@
         settingsVersion = 0;
         bar = {
           barType = "simple";
-          position = "top";
+          position = "left";
           monitors = [ ];
-          density = "default";
+          density = "comfortable";
           showOutline = false;
           showCapsule = true;
           capsuleOpacity = 1;
@@ -80,9 +79,9 @@
           screenOverrides = [ ];
         };
         general = {
-          avatarImage = "";
+          avatarImage = "~/pics/.face";
           dimmerOpacity = 0.2;
-          showScreenCorners = false;
+          showScreenCorners = true;
           forceBlackScreenCorners = false;
           scaleRatio = 1;
           radiusRatio = 1;
@@ -152,7 +151,7 @@
           settingsPanelSideBarCardStyle = false;
         };
         location = {
-          name = "Tokyo";
+          name = "cherthala"; # doxxing myself
           weatherEnabled = true;
           weatherShowEffects = true;
           useFahrenheit = false;
@@ -183,8 +182,8 @@
         };
         wallpaper = {
           enabled = true;
-          overviewEnabled = false;
-          directory = "";
+          overviewEnabled = true;
+          directory = "~/code/echelon/walls";
           monitorDirectories = [ ];
           enableMultiMonitorDirectories = false;
           showHiddenFiles = false;
@@ -230,7 +229,7 @@
           pinnedApps = [ ];
           useApp2Unit = false;
           sortByMostUsed = true;
-          terminalCommand = "alacritty -e";
+          terminalCommand = "kitty -e";
           customLaunchPrefixEnabled = false;
           customLaunchPrefix = "";
           viewMode = "list";
@@ -329,7 +328,7 @@
           externalMonitor = "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor";
         };
         dock = {
-          enabled = true;
+          enabled = false;
           position = "bottom";
           displayMode = "auto_hide";
           dockType = "floating";
@@ -355,7 +354,7 @@
           showFrameIndicator = true;
         };
         network = {
-          wifiEnabled = true;
+          wifiEnabled = false;
           airplaneModeEnabled = false;
           bluetoothRssiPollingEnabled = false;
           bluetoothRssiPollIntervalMs = 60000;
@@ -473,7 +472,7 @@
         };
         colorSchemes = {
           useWallpaperColors = false;
-          predefinedScheme = "Noctalia (default)";
+          predefinedScheme = "Gruvbox";
           darkMode = true;
           schedulingMode = "off";
           manualSunrise = "06:30";

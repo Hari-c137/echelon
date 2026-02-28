@@ -81,7 +81,7 @@
     rsclock
     gcc # voidbox
     nautilus
-    android-studio-full
+    android-studio
     wget
     nodejs
     ncdu
