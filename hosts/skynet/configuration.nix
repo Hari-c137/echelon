@@ -37,6 +37,8 @@
 
   services.displayManager.ly.enable = true;
 
+  programs.kdeconnect.enable = true;
+  
   security.polkit.enable = true;
   security.sudo-rs = {
     enable = true;
@@ -85,6 +87,7 @@
     wget
     nodejs
     ncdu
+    pkgs.kdePackages.qttools
     nim
     nimble
     nph

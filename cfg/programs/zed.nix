@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   programs.zed-editor = {
-    enable = true;
+    enable = false;
     package = pkgs.zed-editor;
     extensions = [
       "rust"
