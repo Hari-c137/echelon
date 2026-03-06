@@ -85,6 +85,8 @@
     nautilus
     android-studio
     wget
+    vscode-fhs
+    rustdesk
     nodejs
     ncdu
     scrcpy
