@@ -38,7 +38,7 @@
               id = "Clock";
               colorColor = "none";
               formatHorizontal = "HH:mm, ddd, MMM dd";
-              formatVertical = "HH mm - dd MM ss";
+              formatVertical = "HH mm ss - dd MM";
               tooltipFormat = "HH:mm ddd, MMM dd";
               useCustomFont = false;
             }

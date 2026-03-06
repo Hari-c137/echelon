@@ -87,6 +87,9 @@
     wget
     nodejs
     ncdu
+    scrcpy
+    android-tools
+    qtscrcpy
     pkgs.kdePackages.qttools
     nim
     nimble
