@@ -86,7 +86,7 @@
     android-studio
     wget
     vscode-fhs
-    rustdesk
+    # rustdesk
     nodejs
     ncdu
     scrcpy
