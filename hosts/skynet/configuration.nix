@@ -54,6 +54,15 @@
     startupProfile = "norgb.orp";
   };
 
+  xdg.portal = {
+  enable = true;
+  extraPortals = [
+    pkgs.xdg-desktop-portal-gtk # Necessary for many apps
+    pkgs.xdg-desktop-portal-gnome
+    pkgs.xdg-desktop-portal
+  ];
+};
+
   fonts.packages = with pkgs; [
     nerd-fonts.iosevka
   ];

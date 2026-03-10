@@ -105,9 +105,9 @@ window-rule {
     open-maximized true
 }
 
-debug {
-      honor-xdg-activation-with-invalid-serial
-}
+// debug {
+//       honor-xdg-activation-with-invalid-serial
+// }
 
 binds {
     Mod+D           { spawn "vicinae" "toggle";  }
