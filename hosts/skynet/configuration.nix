@@ -38,7 +38,7 @@
   services.displayManager.ly.enable = true;
 
   programs.kdeconnect.enable = true;
-  
+
   security.polkit.enable = true;
   security.sudo-rs = {
     enable = true;
@@ -55,13 +55,13 @@
   };
 
   xdg.portal = {
-  enable = true;
-  extraPortals = [
-    pkgs.xdg-desktop-portal-gtk # Necessary for many apps
-    pkgs.xdg-desktop-portal-gnome
-    pkgs.xdg-desktop-portal
-  ];
-};
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk # Necessary for many apps
+      pkgs.xdg-desktop-portal-gnome
+      pkgs.xdg-desktop-portal
+    ];
+  };
 
   fonts.packages = with pkgs; [
     nerd-fonts.iosevka
@@ -74,20 +74,24 @@
       "nix-command"
       "flakes"
     ];
+
+    substituters = ["https://attic.xuyh0120.win/lantian"];
+    trusted-public-keys = ["lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="];
+
     extra-trusted-public-keys = [
     ];
   };
 
-  nixpkgs.config = { android_sdk.accept_license = true; };
+  nixpkgs.config = {android_sdk.accept_license = true;};
 
   programs.gpu-screen-recorder.enable = true;
-  
+
   environment.systemPackages = with pkgs; [
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
     usbutils
     imhex
-    # gitu
+    gitu
     polkit_gnome
     rsclock
     gcc # voidbox

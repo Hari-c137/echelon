@@ -3,6 +3,7 @@
   outputs = {
     nixpkgs,
     nixos-generators,
+    nix-cachyos-kernel,
     rust-overlay,
     home-manager,
     ...
@@ -26,6 +27,7 @@
           {...}: {
             nixpkgs.overlays = [
               rust-overlay.overlays.default
+              nix-cachyos-kernel.overlays.default
               inputs.niri-flake.overlays.niri
             ];
           }
@@ -68,6 +70,9 @@
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nix-cachyos-kernel = {
+      url = "github:xddxdd/nix-cachyos-kernel/release";
     };
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
