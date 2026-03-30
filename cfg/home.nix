@@ -13,7 +13,7 @@
     ./zellij.nix
     ./foot.nix
     ./terminal
-    ./mangowc.nix
+    # ./mangowc.nix
     ./wall.nix
     ./ueshell.nix
     ./niri.nix

@@ -7,7 +7,7 @@
     ./i2p.nix
     ./audio.nix
     ./noctalia.nix
-    ./mangowc.nix
+    # ./mangowc.nix
     ./ollama.nix
     ./formatters.nix
     ./nh.nix

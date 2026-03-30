@@ -4,7 +4,6 @@
     nixpkgs,
     nixos-generators,
     rust-overlay,
-    mango,
     home-manager,
     ...
   } @ inputs: let
@@ -16,7 +15,6 @@
       modules = [
         ./hosts/skynet/configuration.nix
         home-manager.nixosModules.home-manager
-        mango.nixosModules.mango
       ];
       format = "iso";
     };
@@ -33,7 +31,6 @@
           }
         )
         ./hosts/skynet/configuration.nix
-        mango.nixosModules.mango
         (
           {pkgs, ...}: {
             environment.systemPackages = with pkgs; [
@@ -74,10 +71,6 @@
     };
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    mango = {
-      url = "github:DreamMaoMao/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     niri-flake = {
