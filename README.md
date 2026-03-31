@@ -11,7 +11,7 @@ Read The Friendly Source Code
 | terminal_emulator  | kitty |
 | text_editor | helix |
 | IDE | zed |
-| Browser | helix/zen |
+| Browser | helium/zen |
 | desktop_shell      | noctalia | 
 
  
