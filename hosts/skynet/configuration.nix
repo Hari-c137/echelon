@@ -98,6 +98,7 @@
     nautilus
     android-studio
     wget
+    fastfetch
     vscode-fhs
     # rustdesk
     nodejs
