@@ -8,7 +8,7 @@
       editor = "hx";
       window_padding_width = 0;
       # window_padding_width = 2;
-      #    cursor_trail_decay = "0.1 0.4";
+      cursor_trail_decay = "0.1 0.4";
     };
     keybindings = {
       "alt+1" = "goto_tab 1";
