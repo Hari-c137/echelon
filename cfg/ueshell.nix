@@ -166,7 +166,7 @@
         screenOverrides = [];
       };
       general = {
-        avatarImage = "~/pics/.face";
+        avatarImage = "~/file/face.jpeg";
         dimmerOpacity = 0.2;
         showScreenCorners = false;
         forceBlackScreenCorners = true;
