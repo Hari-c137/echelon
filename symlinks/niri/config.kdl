@@ -50,7 +50,6 @@ overview {
 }
 
 spawn-at-startup "noctalia-shell"
-spawn-at-startup "alacritty" "--daemon"
 spawn-at-startup "vicinae" "server"
 
 environment {
@@ -105,9 +104,9 @@ window-rule {
     open-maximized true
 }
 
-// debug {
-//       honor-xdg-activation-with-invalid-serial
-// }
+ debug {
+       honor-xdg-activation-with-invalid-serial
+ }
 
 binds {
     Mod+D           { spawn "vicinae" "toggle";  }
@@ -119,8 +118,8 @@ binds {
     Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
     Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
 
-    Mod+Return       { spawn "kitty"; }
-    Mod+Shift+Return { spawn "alacritty" "msg" "create-window"; }
+    Mod+Return       { spawn "kitty" "--start-as=fullscreen"; }
+    Mod+Shift+Return { spawn "kitty"; }
     Mod+Shift+B      { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Space        { spawn  "sh" "-c" "niri msg action switch-layout next"; }
 
