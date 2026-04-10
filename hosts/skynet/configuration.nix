@@ -35,6 +35,10 @@
     ];
   };
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "ventoy-qt5-1.1.10"
+  ];
+
   services.displayManager.ly.enable = true;
 
   programs.kdeconnect.enable = true;
@@ -105,6 +109,7 @@
     ncdu
     scrcpy
     android-tools
+    ventoy-full-qt
     qtscrcpy
     spacetimedb
     pkgs.kdePackages.qttools

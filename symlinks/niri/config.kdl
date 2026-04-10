@@ -110,7 +110,7 @@ window-rule {
 
 binds {
     Mod+D           { spawn "vicinae" "toggle";  }
-    Mod+F           { spawn "zen"; }
+    Mod+F           { spawn "zen-twilight"; }
 
     Mod+B           { spawn "noctalia-shell" "ipc" "call" "bar" "toggle"; }
     Mod+Y           { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
