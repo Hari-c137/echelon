@@ -18,7 +18,7 @@
     };
   };
 
-  hardware.bluetooth.enable = false;
+  hardware.bluetooth.enable = true;
 
   time.timeZone = "Asia/Kolkata";
   nixpkgs.config.allowUnfree = true;
