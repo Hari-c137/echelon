@@ -1,6 +1,6 @@
 {...}: {
   programs.zed-editor = {
-    enable = false;
+    enable = true;
     extensions = [
       "rust"
       "nim"
@@ -8,9 +8,6 @@
       "glsl"
     ];
     userSettings = {
-      features = {
-        copilot = false;
-      };
       telemetry = {
         metrics = false;
       };
