@@ -16,6 +16,7 @@
  - [ ] vicinae(primary)
  - [ ] custom
 - [ ] Disko
+- [ ] dendritic-pattern
 - [ ] SOPS
 - [ ] Keyboard centric utils
 - [ ] ISO Generation CI/CD
