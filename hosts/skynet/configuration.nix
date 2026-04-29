@@ -106,7 +106,6 @@
     ncdu
     scrcpy
     android-tools
-    ventoy-full-qt
     qtscrcpy
     spacetimedb
     pkgs.kdePackages.qttools
