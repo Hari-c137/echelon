@@ -35,9 +35,6 @@
     ];
   };
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "ventoy-qt5-1.1.10"
-  ];
 
   services.displayManager.ly.enable = true;
 
