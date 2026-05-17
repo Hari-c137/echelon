@@ -107,7 +107,7 @@
     scrcpy
     android-tools
     qtscrcpy
-    spacetimedb
+    # spacetimedb
     pkgs.kdePackages.qttools
     nim
     nimble
