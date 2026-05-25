@@ -12,9 +12,9 @@
       log = {
         enabled = false;
       };
-      show_hidden = false;
-      sort_dir_first = true;
-      sort_reverse = true;
+      show-hidden = false;
+      sort-dir_first = true;
+      sort-reverse = true;
     };
     shellWrapperName = "yy";
   };
