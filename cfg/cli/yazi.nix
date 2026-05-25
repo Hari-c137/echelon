@@ -13,7 +13,7 @@
         enabled = false;
       };
       show-hidden = false;
-      sort-dir_first = true;
+      sort-dir-first = true;
       sort-reverse = true;
     };
     shellWrapperName = "yy";
