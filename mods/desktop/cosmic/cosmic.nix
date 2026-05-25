@@ -18,7 +18,6 @@
       # cosmic-ext-applet-emoji-selector
       # examine
       forecast
-      xdg-desktop-portal-cosmic
     ];
   };
 

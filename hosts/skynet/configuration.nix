@@ -56,10 +56,11 @@
 
   xdg.portal = {
     enable = true;
+    xdgOpenUsePortal = true;
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk # Necessary for many apps
       pkgs.xdg-desktop-portal-gnome
-      pkgs.xdg-desktop-portal
+      
     ];
   };
 
