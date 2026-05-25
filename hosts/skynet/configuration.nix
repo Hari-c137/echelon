@@ -37,7 +37,6 @@
 
 
   services.displayManager.ly.enable = true;
-
   programs.kdeconnect.enable = true;
 
   security.polkit.enable = true;
@@ -83,7 +82,7 @@
     ];
   };
 
-  nixpkgs.config = {android_sdk.accept_license = true;};
+  # nixpkgs.config = {android_sdk.accept_license = true;};
 
   programs.gpu-screen-recorder.enable = true;
 
@@ -91,16 +90,16 @@
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
     usbutils
-    imhex
+    # imhex
     gitu
     polkit_gnome
     rsclock
     gcc # voidbox
     nautilus
-    android-studio
+    # android-studio
     wget
     fastfetch
-    vscode-fhs
+    # vscode-fhs
     # rustdesk
     nodejs
     ncdu

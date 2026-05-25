@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    # ./start-cosmic-ext-niri.nix
+     ./start-cosmic-ext-niri.nix
   ];
   environment = {
     variables.NIXOS_OZONE_WL = "1";
@@ -18,6 +18,7 @@
       # cosmic-ext-applet-emoji-selector
       # examine
       forecast
+      xdg-desktop-portal-cosmic
     ];
   };
 
