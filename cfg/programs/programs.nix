@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./vesktop.nix
+    ./equibop.nix
     ./zen.nix
     ./helium.nix
     ./zed.nix
