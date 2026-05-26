@@ -33,6 +33,11 @@
     options = ["fmask=0022" "dmask=0022"];
   };
 
+  fileSystems."/mnt/hdd_00" = {
+    device = "/dev/disk/by-uuid/393ba93e-be55-45f6-9f3f-46c832b94605";
+    fsType = "btrfs";
+  };
+
   fileSystems."/mnt/hdd_01" = {
     device = "/dev/disk/by-uuid/9b8caee0-1121-4d77-a78b-8e8ae6bfa329";
     fsType = "ext4";
