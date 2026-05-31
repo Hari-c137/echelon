@@ -70,7 +70,7 @@ environment {
     EDITOR "hx"
     _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
-    RADV_PERFTEST "video_decode"
+    RADV_EXPERIMENTAL "video_decode"
     //nv GSK_RENDERER "ngl"
     //nv NVD_BACKEND "direct"
     //nv __GL_VRR_ALLOWED "1"
