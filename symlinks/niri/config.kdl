@@ -49,7 +49,8 @@ overview {
     zoom 0.45
 }
 
-spawn-at-startup "noctalia-shell"
+// spawn-at-startup "noctalia-shell"
+spawn-at-startup "noctalia"
 spawn-at-startup "vicinae" "server"
 
 environment {
@@ -100,9 +101,10 @@ layer-rule {
 
 window-rule {
    geometry-corner-radius 0
-    clip-to-geometry true
-    open-maximized true
+   clip-to-geometry true
+   open-maximized true
 }
+
 
  debug {
        honor-xdg-activation-with-invalid-serial
@@ -112,11 +114,17 @@ binds {
     Mod+D           { spawn "vicinae" "toggle";  }
     Mod+F           { spawn "zen-twilight"; }
 
-    Mod+B           { spawn "noctalia-shell" "ipc" "call" "bar" "toggle"; }
-    Mod+Y           { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
-    Mod+Shift+W     { spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle";  }
-    Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
-    Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
+    // Mod+B           { spawn "noctalia-shell" "ipc" "call" "bar" "toggle"; }
+    // Mod+Y           { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    // Mod+Shift+W     { spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle";  }
+    // Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
+    // Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
+
+    Mod+B           { spawn "noctalia" "ipc" "call" "bar" "toggle"; }
+    Mod+Y           { spawn "noctalia" "msg" "panel-toggle" "control-center" ; }
+    Mod+Shift+W     { spawn "noctalia" "ipc" "call" "wallpaper" "toggle";  }
+    Mod+Shift+L     { spawn "noctalia" "ipc" "call" "lockScreen" "lock";  }
+    Mod+U           { spawn "noctalia" "ipc" "call" "notifications" "toggleHistory";  }
 
     Mod+Return       { spawn "kitty" "--start-as=fullscreen"; }
     Mod+Shift+Return { spawn "kitty"; }
@@ -183,16 +191,27 @@ binds {
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
 
-    XF86AudioRaiseVolume { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
-    XF86AudioLowerVolume { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-    XF86AudioMute { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
-    XF86MonBrightnessUp { spawn  "noctalia-shell" "ipc" "call" "brightness" "increase"; }
-    XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+    // XF86AudioRaiseVolume { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
+    // XF86AudioLowerVolume { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+    // XF86AudioMute { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    // XF86MonBrightnessUp { spawn  "noctalia-shell" "ipc" "call" "brightness" "increase"; }
+    // XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+
+    XF86AudioRaiseVolume { spawn "noctalia" "msg" "volume-up"; }
+    XF86AudioLowerVolume { spawn "noctalia" "msg" "volume-down"; }
+    XF86AudioMute { spawn "noctalia" "msg" "volume-mute"; }
+    XF86MonBrightnessUp { spawn  "noctalia" "msg" "brightness-up"; }
+    XF86MonBrightnessDown { spawn "noctalia" "msg" "brightness-down"; }
+
+    // F5 { spawn "niri" "msg" "action" "screenshot"; }
+    // F10 { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    // F11 { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+    // F12 { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
 
     F5 { spawn "niri" "msg" "action" "screenshot"; }
-    F10 { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
-    F11 { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-    F12 { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
+    F10 { spawn "noctalia" "msg" "volume-mute"; }
+    F11 { spawn "noctalia" "msg" "volume-down"; }
+    F12 { spawn "noctalia" "msg" "volume-up"; }
 
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }

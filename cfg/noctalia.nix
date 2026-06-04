@@ -1,6 +1,6 @@
 {inputs, ...}: {
   imports = [
-    inputs.noctalia.homeModules.default
+    inputs.noctalia-v5.homeModules.default
   ];
   programs.noctalia-shell = {
     enable = true;
