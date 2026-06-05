@@ -1,0 +1,300 @@
+{
+  "repo_notes": [
+    {
+      "content": "documentation for personal NixOS infrastructure-as-code configuration"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "Introduce the Echelon configuration repository, explaining its purpose as a NixOS system configuration for host 'skynet' with a Wayland-based desktop environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "System Architecture",
+      "purpose": "Explain the overall architecture showing how flakes, system configuration, and user configuration work together",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Nix Flake Infrastructure",
+      "purpose": "Deep dive into flake.nix and flake.lock, explaining dependency management, input following patterns, and how external packages are integrated",
+      "parent": "System Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "NixOS System Configuration",
+      "purpose": "Document the system-level configuration including bootloader, networking, services, performance tuning, and hardware setup",
+      "parent": "System Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Home Manager Configuration",
+      "purpose": "Explain the user-level configuration structure, how home.nix aggregates various user modules, and the separation between system and user concerns",
+      "parent": "System Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Desktop Environment",
+      "purpose": "Overview of the Wayland-based desktop stack from compositor to desktop shell to applications",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Niri Window Manager",
+      "purpose": "Comprehensive guide to Niri configuration including column layout, hotkeys, input settings, and window rules",
+      "parent": "Desktop Environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Noctalia Desktop Shell",
+      "purpose": "Document the Noctalia shell configuration including bar widgets, notifications, wallpaper management, and OSD settings",
+      "parent": "Desktop Environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Kitty Terminal Emulator",
+      "purpose": "Detail Kitty terminal configuration including font, theme, keybindings, tab bar, and shell integration",
+      "parent": "Desktop Environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Alternative Compositors",
+      "purpose": "Document alternative window manager/compositor configurations including Mango and Cosmic",
+      "parent": "Desktop Environment",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Text Editors",
+      "purpose": "Overview of the three primary text editor configurations and their respective features",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Helix Editor",
+      "purpose": "Document Helix configuration including LSP setup, language servers, formatters, and keybindings",
+      "parent": "Text Editors",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Neovim",
+      "purpose": "Explain Neovim configuration with Mini.nvim plugin manager, init.lua structure, and plugin organization",
+      "parent": "Text Editors",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Doom Emacs",
+      "purpose": "Detail Doom Emacs configuration including enabled modules, custom settings, and package management",
+      "parent": "Text Editors",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Shell Environments",
+      "purpose": "Document shell configurations and their shared aliases, focusing on Fish as the primary shell",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Fish Shell",
+      "purpose": "Detail Fish shell configuration including aliases for git/nix/make, plugins, and interactive features",
+      "parent": "Shell Environments",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Alternative Shells",
+      "purpose": "Document configurations for Nushell, Bash, and Ion shells",
+      "parent": "Shell Environments",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Command-Line Tools",
+      "purpose": "Overview of the extensive CLI toolkit including search, file management, and development utilities",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Search and Navigation",
+      "purpose": "Document ripgrep, fd, fzf, bat, and yazi configurations for file searching and navigation",
+      "parent": "Command-Line Tools",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Version Control Tools",
+      "purpose": "Explain Git configuration with delta integration and Jujutsu VCS setup",
+      "parent": "Command-Line Tools",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "System Monitoring",
+      "purpose": "Document bottom (btm) system monitor configuration",
+      "parent": "Command-Line Tools",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Development Environments",
+      "purpose": "Overview of development shells for different programming languages and formatters",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Rust Development",
+      "purpose": "Document Rust development shells including eframe (WASM+GUI) and general Rust with GTK4",
+      "parent": "Development Environments",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Other Language Environments",
+      "purpose": "Document development shells for Nim and ATmega32 embedded development",
+      "parent": "Development Environments",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Code Formatters",
+      "purpose": "Explain system-wide formatter installation (stylua, shfmt, alejandra) and their integration with editors",
+      "parent": "Development Environments",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Configuration Patterns",
+      "purpose": "Explain common configuration patterns used throughout the system",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Module Aggregation",
+      "purpose": "Document the pattern of using aggregator files (source.nix, home.nix, editors.nix) to compose modular configurations",
+      "parent": "Configuration Patterns",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Symlink Management",
+      "purpose": "Explain the out-of-store symlink pattern for managing dotfiles (niri, doom, nvim, mpv, ewwii)",
+      "parent": "Configuration Patterns",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Flake Input Following",
+      "purpose": "Detail the dependency management strategy where all inputs follow the root nixpkgs to prevent version conflicts",
+      "parent": "Configuration Patterns",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Specialized Services",
+      "purpose": "Document specialized system services including AI/ML and performance optimization",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
