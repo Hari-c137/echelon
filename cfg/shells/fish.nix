@@ -13,6 +13,9 @@
     up = "sudo nixos-rebuild --upgrade switch --flake ~/code/echelon#skynet";
     ll = "ls -la";
     l = "ls -l";
+    # rust
+    cr = "cargo run";
+    cb = "cargo build";
   };
 in {
   programs.fish = {
