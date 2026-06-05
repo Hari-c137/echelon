@@ -126,8 +126,8 @@ binds {
     Mod+Shift+L     { spawn "noctalia" "ipc" "call" "lockScreen" "lock";  }
     Mod+U           { spawn "noctalia" "ipc" "call" "notifications" "toggleHistory";  }
 
-    Mod+Return       { spawn "kitty" "--start-as=fullscreen"; }
-    Mod+Shift+Return { spawn "kitty"; }
+    Mod+Return       { spawn "kitty"; }
+    Mod+Shift+Return { spawn "kitty" "--start-as=fullscreen"; }
     Mod+Shift+B      { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
     Mod+Space        { spawn  "sh" "-c" "niri msg action switch-layout next"; }
 
