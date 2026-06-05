@@ -1,5 +1,5 @@
 ## DOCS
-documentation is still work-in-progress -- therefore, for the time being:
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Hari-c137/echelon)
 
 Read The Friendly Source Code
 
