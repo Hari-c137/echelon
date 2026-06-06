@@ -38,7 +38,7 @@
     enableGitIntegration = true;
     shellIntegration.enableFishIntegration = true;
     settings = {
-      scrollback_lines = 20000;
+      scrollback_lines = 50000;
       scrollbar = "never";
       pixel_scroll = "yes";
       enable_audio_bell = "no";
