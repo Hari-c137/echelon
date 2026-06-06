@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   programs.bash = {
     enable = true;
     shellAliases = {
@@ -10,5 +12,4 @@
       export PATH="$HOME/.local/bin:$PATH"
     '';
   };
-
 }

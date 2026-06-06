@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   services.displayManager.sessionPackages = [
     (
       (pkgs.writeTextFile {
@@ -77,7 +76,7 @@
         '';
       }).overrideAttrs
       (old: {
-        passthru.providedSessions = [ "COSMIC-on-niri" ];
+        passthru.providedSessions = ["COSMIC-on-niri"];
       })
     )
   ];

@@ -35,7 +35,6 @@
     ];
   };
 
-
   services.displayManager.ly.enable = true;
   programs.kdeconnect.enable = true;
 
@@ -60,7 +59,6 @@
     extraPortals = [
       pkgs.xdg-desktop-portal-gtk # Necessary for many apps
       pkgs.xdg-desktop-portal-gnome
-      
     ];
   };
 
