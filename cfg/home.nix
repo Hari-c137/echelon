@@ -15,7 +15,7 @@
     ./terminal
     # ./mangowc.nix
     ./wall.nix
-    ./ueshell.nix
+    # ./ueshell.nix
     ./niri.nix
     ./../symlinks/symlinks.nix
     ./mpv.nix

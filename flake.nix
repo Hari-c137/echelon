@@ -86,10 +86,6 @@
       url = "github:mrnossiom/wakatime-ls";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     noctalia-v5 = {
       url = "github:noctalia-dev/noctalia-shell/";
       inputs.nixpkgs.follows = "nixpkgs";
