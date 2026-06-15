@@ -27,7 +27,7 @@
           {...}: {
             nixpkgs.overlays = [
               rust-overlay.overlays.default
-              nix-cachyos-kernel.overlays.default
+              nix-cachyos-kernel.overlays.pinned
               inputs.niri-flake.overlays.niri
             ];
           }

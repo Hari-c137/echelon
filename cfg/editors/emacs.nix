@@ -1,15 +1,15 @@
 {pkgs, ...}: {
   programs.emacs = {
-    enable = false;
-    package = pkgs.emacs-nox;
+    enable = true;
+    # package = pkgs.emacs-nox;
     extraPackages = epkgs: [
       epkgs.vterm
     ];
   };
 
   home.packages = with pkgs; [
-    #   pandoc
+      pandoc
   ];
-  services.emacs.enable = false;
+  services.emacs.enable = true;
   services.emacs.defaultEditor = false;
 }
