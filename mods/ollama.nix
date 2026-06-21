@@ -1,10 +1,10 @@
 {pkgs, ...}: {
   services.ollama = {
-    enable = false;
+    enable = true;
     package = pkgs.ollama-rocm;
-    loadModels = [
-      "deepseek-r1:7b"
-      "goekdenizguelmez/JOSIEFIED-Qwen3:4b"
-    ];
+    # loadModels = [
+    #   "deepseek-r1:7b"
+    #   "goekdenizguelmez/JOSIEFIED-Qwen3:4b"
+    # ];
   };
 }

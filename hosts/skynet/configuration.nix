@@ -99,6 +99,7 @@
     wget
     fastfetch
     # vscode-fhs
+    mission-center
     # rustdesk
     nodejs
     ncdu
