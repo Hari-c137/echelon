@@ -1,7 +1,9 @@
 ## DOCS
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Hari-c137/echelon)
 
-Read The Friendly Source Code
+
+for basic infrastructure familiarization: (AI-Assisted) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Hari-c137/echelon)
+
+for latest git changes: Read The Friendly Source Code
 
 ## system[0]:  x137@skynet
 
@@ -12,7 +14,7 @@ Read The Friendly Source Code
 | text_editor | helix |
 | IDE | zed |
 | Browser | helium/zen |
-| desktop_shell      | noctalia | 
+| desktop_shell      | noctalia-v5 | 
 
  
 ## License (got it from [cve-rs](https://github.com/Speykious/cve-rs))
