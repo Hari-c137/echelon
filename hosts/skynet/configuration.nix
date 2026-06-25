@@ -118,6 +118,7 @@
     gnumake
     nvtopPackages.amd
     cmake
+    rustdesk-flutter
     fuzzel # remove
     unzip # nonfreerepo
     curl
