@@ -85,6 +85,8 @@
 
   programs.gpu-screen-recorder.enable = true;
 
+  documentation.enable = false;
+
   environment.systemPackages = with pkgs; [
     (lib.hiPrio pkgs.uutils-coreutils-noprefix) # what could go wrong..?
     wl-clipboard
@@ -100,6 +102,7 @@
     fastfetch
     # vscode-fhs
     mission-center
+    gnome-gnome-disk-utility
     # rustdesk
     nodejs
     ncdu
