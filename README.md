@@ -3,7 +3,7 @@
 
 for basic infrastructure familiarization: (AI-Assisted) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Hari-c137/echelon)
 
-for latest git changes: Read The Friendly Source Code
+for latest git changes: Read The Fucking Source Code
 
 ## system[0]:  x137@skynet
 
