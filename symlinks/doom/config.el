@@ -5,4 +5,4 @@
 (setq display-line-numbers-type 'relative)
 (setq org-directory "~/code/org/")
 (setq-default vterm-shell (executable-find "fish"))
-(setq fancy-splash-image "~/code/echelon/workers/ewm/trancendent-gnu.png")
+(setq fancy-splash-image "~/code/echelon/workers/ewm/M-x_butterfly.png")
