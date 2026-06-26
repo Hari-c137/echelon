@@ -10,6 +10,6 @@
   home.packages = with pkgs; [
     pandoc
   ];
-  services.emacs.enable = true;
+  services.emacs.enable = false;
   services.emacs.defaultEditor = false;
 }

@@ -1,15 +1,22 @@
 {
   lib,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
     ./hardware-configuration.nix
     ./../../mods/source.nix
+    inputs.ewm.nixosModules.default
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  programs.ewm = {
+    enable = true;
+    screencast.enable = true;
+  };
 
   networking = {
     hostName = "skynet";
@@ -102,7 +109,7 @@
     fastfetch
     # vscode-fhs
     mission-center
-    gnome-gnome-disk-utility
+    gnome-disk-utility
     # rustdesk
     nodejs
     ncdu
