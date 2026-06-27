@@ -106,9 +106,11 @@
     nautilus
     # android-studio
     wget
+    foot
     fastfetch
     # vscode-fhs
     mission-center
+    tofi
     gnome-disk-utility
     # rustdesk
     nodejs
