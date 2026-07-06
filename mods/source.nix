@@ -5,6 +5,7 @@
     ./performance.nix
     ./qbit.nix
     ./i2p.nix
+    ./jellyfin.nix
     ./audio.nix
     ./noctalia.nix
     # ./mangowc.nix
