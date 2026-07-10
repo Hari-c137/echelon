@@ -46,7 +46,7 @@ layout {
 
 
 overview {
-    zoom 0.45
+    zoom 0.37
 }
 
 // spawn-at-startup "noctalia-shell"
@@ -106,9 +106,9 @@ window-rule {
 }
 
 
- debug {
-       honor-xdg-activation-with-invalid-serial
- }
+debug {
+	honor-xdg-activation-with-invalid-serial
+}
 
 binds {
     Mod+D           { spawn "vicinae" "toggle";  }
