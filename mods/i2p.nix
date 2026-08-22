@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   containers.i2pd-container = {
     autoStart = true;
     config = {...}: {
@@ -8,7 +8,7 @@
 
       services.i2pd = {
         enable = true;
-        address = "127.0.0.1";
+         address = "127.0.0.1";
         proto = {
           sam.enable = true;
           http.enable = true;
