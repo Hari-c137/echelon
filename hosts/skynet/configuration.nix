@@ -14,7 +14,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   programs.ewm = {
-    enable = true;
+    enable = false;
     screencast.enable = true;
   };
 
