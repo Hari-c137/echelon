@@ -90,7 +90,10 @@
 
   # nixpkgs.config = {android_sdk.accept_license = true;};
 
-  programs.gpu-screen-recorder.enable = true;
+  programs.gpu-screen-recorder = {
+    enable = true;
+    ui.enable = true;
+  }
 
   documentation.enable = false;
 
