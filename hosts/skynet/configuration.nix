@@ -130,13 +130,31 @@
     gnumake
     nvtopPackages.amd
     cmake
-    rustdesk-flutter
-    fuzzel # remove
-    unzip # nonfreerepo
-    curl
-    heroic # gaming
-    pwvucontrol # audio
-  ];
+    python3                                                                                                                                                                                        
+    rustdesk-flutter                                                                                                                                                                                
+    fuzzel                                                                                                                                                                              
+    unzip                                                                                                                                                                           
+    curl                                                                                                                                                                                       
+    heroic                                                                                                                                                                               
+    jdk                                                                                                                                                                                           
+    gedit                                                                                                                                                                                         
+    onlyoffice-desktopeditors                                                                                                                                                                   
+    pwvucontrol                                                                                                                                                                          
+    obsidian                                                                                                                                                                                    
+    discord                                                                                                                                                                                      
+    neovim                                                                                                                                                                                    
+    vscodium                                                                                                                                                                                   
+    cava                                                                                                                                                                                        
+    tty-clock                                                                                                                                                                                                                                                                                                                                                                             
+    cmatrix #there is no limit to the larp.                                                                                                                                                         
+    cliamp                                                                                                                                                                                       
+    chromium                                                                                                                                                                                      
+    opencode   
+    antigravity-fhs                                                                                                                                                                              
+   ];                                                                                                                                                                                                     
+                                                                                                                                                                                                              
+        system.stateVersion = "26.05";                                                                                                                                                                         
+      }                                                                                                                                                                                                        
+                                                                                                                                                                                                            
+                                          
 
-  system.stateVersion = "26.05";
-}
