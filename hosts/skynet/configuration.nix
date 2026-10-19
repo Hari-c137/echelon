@@ -1,22 +1,22 @@
 {
   lib,
   pkgs,
-  inputs,
+  # inputs,
   ...
 }: {
   imports = [
     ./hardware-configuration.nix
     ./../../mods/source.nix
-    inputs.ewm.nixosModules.default
+    # inputs.ewm.nixosModules.default
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  programs.ewm = {
-    enable = false;
-    screencast.enable = true;
-  };
+  # programs.ewm = {
+  #   enable = false;
+  #   screencast.enable = true;
+  # };
 
   networking = {
     hostName = "skynet";
@@ -93,7 +93,7 @@
   programs.gpu-screen-recorder = {
     enable = true;
     ui.enable = true;
-  }
+  };
 
   documentation.enable = false;
 
