@@ -22,7 +22,7 @@ for latest git changes: Read The Fucking Source Code
 Contributions are welcome. If you wish to contribute, please get in
 touch first, so that we can discuss the changes you want to make.
 
-This is project is free of AI. Contributions generated or assisted by
+This is project is free of AI (except for generating DOCS). Contributions generated or assisted by
 generative AI will not be accepted. Neither will be contributions by
 people who have made substantial use of this technology in other
 projects.
