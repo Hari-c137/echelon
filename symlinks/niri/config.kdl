@@ -118,14 +118,14 @@ binds {
     // Mod+Y           { spawn "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
     // Mod+Shift+W     { spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle";  }
     // Mod+Shift+L     { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock";  }
-    // Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  }
-
-    Mod+B           { spawn "noctalia" "ipc" "call" "bar" "toggle"; }
-    Mod+Y           { spawn "noctalia" "msg" "panel-toggle" "control-center" ; }
-    Mod+Shift+W     { spawn "noctalia" "ipc" "call" "wallpaper" "toggle";  }
-    Mod+Shift+L     { spawn "noctalia" "ipc" "call" "lockScreen" "lock";  }
-    Mod+U           { spawn "noctalia" "ipc" "call" "notifications" "toggleHistory";  }
-
+    // Mod+U           { spawn "noctalia-shell" "ipc" "call" "notifications" "toggleHistory";  } 
+                                                                                                                                                                                                           
+    Mod+B           { spawn "noctalia" "msg" "bar-toggle"; }                                                                                                                                             
+    Mod+Y           { spawn "noctalia" "msg" "panel-toggle" "control-center" ; }                                                                                                                         
+    Mod+Shift+W     { spawn "noctalia" "msg" "wallpaper-next" ;  }                                                                                                                                       
+    Mod+Shift+L     { spawn "noctalia" "msg" "session" "lock";  }                                                                                                                                        
+    Mod+U           { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications";  }                                                                                                         
+                                                                                                                 
     Mod+Return       { spawn "kitty"; }
     Mod+Shift+Return { spawn "kitty" "--start-as=fullscreen"; }
     Mod+Shift+B      { spawn  "sh" "-c" "wl-copy < ~/code/keys/git_keys/key.txt"; }
