@@ -1,6 +1,7 @@
 {
   description = "Echelon";
   outputs = {
+    amane,
     nixpkgs,
     nixos-generators,
     nix-cachyos-kernel,
@@ -67,9 +68,13 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # ewm = {
-    #   url = "https://codeberg.org/ezemtsov/ewm/archive/master.tar.gz";
-    # };
+    ewm = {
+      url = "https://codeberg.org/ezemtsov/ewm/archive/master.tar.gz";
+    };
+    amane = {
+      url = "github:MystiaFin/amane";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./amane.nix
     ./desktop/cosmic/default.nix
     ./shell.nix
     ./performance.nix
