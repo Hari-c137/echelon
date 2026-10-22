@@ -1,0 +1,21 @@
+[package]
+name = "amane-shell"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "amane-shell"
+path = '/home/void/code/upperechelon/echelon/ueshell/src/main.rs'
+
+[dependencies]
+amane = { path = '/home/void/.cache/amane/library' }
+
+[profile.dev]
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+opt-level = 3
+debug = false
+incremental = false
+
+[workspace]
