@@ -28,13 +28,19 @@ fn main() {
 }
 
 fn view() -> LayerWindow {
+    let bat = Battery::read();
     let clock = Clock::read();
     let cpu = Cpu::read();
     let mem = Memory::read();
 
     let label = format!(
-        "time: {}   cpu:{}%   memory:{}%",
+        "time: {}  bat:{:#?}%  cpu:{}%   memory:{}%",
         clock.time,
+        if bat.present() == true {
+            bat.percent()
+        } else {
+            0
+        },
         cpu.percent(),
         mem.percent(),
     );
