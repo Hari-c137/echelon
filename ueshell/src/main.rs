@@ -13,7 +13,7 @@ impl Service for Clock {
     }
 
     fn interval() -> Duration {
-        Duration::from_secs(60)
+        Duration::from_secs(1)
     }
 
     fn update(&mut self) -> bool {
