@@ -114,6 +114,7 @@
     nautilus
     # android-studio
     wget
+    jdk21
     foot
     fastfetch
     # vscode-fhs
